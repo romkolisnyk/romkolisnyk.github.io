@@ -1,0 +1,343 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #e0e0e0
+
+.loader
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 99999	
+	width: 100%	
+	background: #232731
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: #c5c5c5
+	background-color: #232731
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+a
+	text-decoration: none
+	color: #c5c5c5
+
+.page
+	overflow: hidden
+
+.container
+	margin: 0 auto
+	padding: 0 15px
+
+.sidebar
+	width: 240px
+	padding: 20px
+	position: fixed
+	top: 0
+	left: 0
+	height: calc(100vh - 40px)
+	background-color: #1e2129
+	z-index: 200
+	overflow: hidden
+	.sidebar__content
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		transition: .4s
+	.logo__container
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: #191c23
+		padding: 10px
+		border-radius: 4px
+		.logo
+			height: 50px
+		.logo__text
+			font-size: 35px
+			margin: 0
+			letter-spacing: -2px
+	.info
+		border-top: 2px solid #16191f
+		padding-top: 20px
+		span
+			background-color: #24559e
+			width: 5px
+			height: 5px
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			border-radius: 5px
+	.sidebar__button
+		top: 37px
+		right: -40px
+		position: absolute
+		width: 30px
+		height: 25px
+		margin: 10px auto
+		transform: rotate(0deg)
+		transition: .5s ease-in-out
+		cursor: pointer
+		span
+			display: block
+			position: absolute
+			height: 3px
+			width: 100%
+			background: #24559e
+			border-radius: 2px
+			opacity: 1
+			left: 0
+			transform: rotate(0deg)
+			transition: .25s ease-in-out
+			&:nth-child(1)
+				top: 0px
+			&:nth-child(2)
+				top: 8px
+			&:nth-child(3)
+				top: 16px
+		&.open span
+			&:nth-child(1)
+				top: 8px
+				transform: rotate(135deg)
+			&:nth-child(2)
+				opacity: 0
+				left: -60px
+			&:nth-child(3)
+				top: 8px
+				transform: rotate(-135deg)
+.contacts
+	border-top: 2px solid #16191f
+	transition: .4s
+	.list
+		padding: 0
+	.contacts__item
+		display: inline-block
+		.contacts__icon
+			width: 17px
+			height: 17px
+			margin-right: 10px
+			fill: #24559e
+		.contacts__link
+			display: flex
+			align-items: center
+			font-size: 13px
+			margin: 5px
+			margin-left: 0
+			position: relative
+			transition: .4s
+			&::before
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 27px
+				height: 1px
+				width: 0
+				background-color: #24559e
+				transition: .4s
+			&:hover::before
+				width: calc(100% - 27px)
+			span
+				transition: .4s
+
+		
+
+.main
+	padding-left: 280px
+	.nav
+		position: fixed
+		top: 0
+		background-color: #17191f
+		width: calc(100% - 300px)
+		padding-right: 20px
+		z-index: 99
+		.tabs
+			display: flex
+			align-items: center
+			.tab
+				text-align: center
+				padding: 5px 20px
+				display: inline-block
+				background-color: #1e2129
+				border-right: 1px solid #13151b
+				color: #c6c6c8
+				&.active
+					background-color: #232731
+					color: #f7f7f7
+			#clock
+				margin-left: auto
+
+@keyframes tabs-slide
+	0%
+		opacity: 0
+		transform: translateX(100px)
+	100%
+		opacity: 1
+		transform: translateX(0)
+
+section
+	display: none
+	padding-top: 60px
+	&.active
+		display: block
+		animation: tabs-slide .4s ease forwards
+
+#projects
+	.projects__items
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+	.project__item
+		display: flex
+		align-items: center
+		padding: 10px
+		margin: 20px
+		flex-grow: 1
+		background-color: #1e2129
+		border-radius: 5px
+		width: 44%
+		min-width: 440px
+		.project__img
+			width: 260px
+			height: 100%
+			margin-right: 20px
+			opacity: .8
+			vertical-align: middle
+		.project__link
+			color: #2c70d6
+			font-weight: 600
+			position: relative
+			display: inline-block
+			transition: .4s
+			&::before
+				content: ''
+				position: absolute
+				width: 5px
+				height: 5px
+				background-color: #fff
+				border-radius: 5px
+				left: -10px
+				top: 0
+				bottom: 0
+				margin: auto
+				opacity: 0
+				transition: .4s
+			&:hover
+				transform: translate(10px)
+				&::before
+					opacity: 1
+		.project__descr
+			font-size: 14px
+
+#skills
+	.skills__container
+		display: flex
+		align-items: center
+	.skills__images
+		display: flex
+		flex-wrap: wrap
+		border-right: none
+		padding: 10px
+		justify-content: flex-start
+		width: 200px
+		min-width: 250px
+		max-width: 330px
+		flex-grow: 1
+	.skills__image
+		padding: 10px
+		width: 50px
+		height: 50px
+		margin: 5px
+	.skills__content
+		width: 100%
+	.skills__title
+		font-weight: 600
+		color: #fea001
+		letter-spacing: .5px
+
+
+#experience
+	.exp__items
+		padding: 20px
+		.exp__title
+			position: relative
+			display: inline-block
+			margin-right: 20px
+			font-size: 20px
+			color: #2dad5b
+			font-weight: 600
+			&::before
+				content: ''
+				position: absolute
+				bottom: 0
+				height: 2px
+				width: 100%
+				background-color: #2dad5b
+		.exp__date
+			margin: 0
+			background-color: #15181f
+			display: inline-block
+			padding: 3px 10px
+			border-radius: 4px
+		.exp__tech
+			padding-left: 20px
+			color: #3978ea
+			span
+				color: #d64d4d
+				font-size: 16px
+				margin-right: 15px
+
+#about
+	.container
+		padding: 30px
+		display: flex
+		align-items: flex-start
+	.about__media
+		text-align: center
+		margin-right: 40px
+		.about__img
+			width: 300px
+			border-radius: 50%
+		.about__resume
+			background-color: #1e2129
+			padding: 6px 20px
+			border-radius: 4px
+			margin: 30px auto
+			display: inline-block
+			position: relative
+			overflow: hidden
+			z-index: 2
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 0
+				width: 0
+				height: 100%
+				background-color: #000
+				transition: .4s
+				z-index: -1
+			&:hover::before
+				width: 100%
+	.about__title
+		font-weight: 600
+		color: #bf3647
+
+@import "media"
