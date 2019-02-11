@@ -39,6 +39,12 @@ a
 	text-decoration: none
 	color: #c5c5c5
 
+.blue
+	color: $blue
+
+.orange
+	color: $orange
+
 .page
 	overflow: hidden
 
@@ -168,6 +174,9 @@ a
 		width: calc(100% - 300px)
 		padding-right: 20px
 		z-index: 99
+		display: flex
+		justify-content: space-between
+		align-items: center
 		.tabs
 			display: flex
 			align-items: center
@@ -181,8 +190,6 @@ a
 				&.active
 					background-color: #232731
 					color: #f7f7f7
-			#clock
-				margin-left: auto
 
 @keyframes tabs-slide
 	0%
@@ -222,7 +229,7 @@ section
 			vertical-align: middle
 			border-radius: 3px
 		.project__link
-			color: #2c70d6
+			color: $blue
 			font-weight: 600
 			position: relative
 			display: inline-block
@@ -268,29 +275,23 @@ section
 		margin: 5px
 	.skills__content
 		width: 100%
+		padding: 0 15px
 	.skills__title
 		font-weight: 600
-		color: #fea001
+		color: $orange
 		letter-spacing: .5px
+		font-size: 1.1em
 
 
 #experience
 	.exp__items
 		padding: 20px
 		.exp__title
-			position: relative
 			display: inline-block
 			margin-right: 20px
 			font-size: 20px
-			color: #2dad5b
+			color: #27984f
 			font-weight: 600
-			&::before
-				content: ''
-				position: absolute
-				bottom: 0
-				height: 2px
-				width: 100%
-				background-color: #2dad5b
 		.exp__date
 			margin: 0
 			background-color: #15181f
@@ -301,8 +302,7 @@ section
 			padding-left: 20px
 			color: #3978ea
 			span
-				color: #d64d4d
-				font-size: 16px
+				color: $red
 				margin-right: 15px
 
 #about
@@ -339,6 +339,7 @@ section
 				width: 100%
 	.about__title
 		font-weight: 600
-		color: #bf3647
+		color: $red
+		font-size: 1.1em
 
 @import "media"
