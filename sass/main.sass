@@ -28,6 +28,7 @@ body
 	overflow-x: hidden
 	color: #c5c5c5
 	background-color: #232731
+	
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -84,17 +85,24 @@ a
 			font-size: 35px
 			margin: 0
 			letter-spacing: -2px
-	.info
-		border-top: 2px solid #16191f
-		padding-top: 20px
-		span
-			background-color: #24559e
-			width: 5px
-			height: 5px
-			display: inline-block
-			vertical-align: middle
-			margin-right: 10px
-			border-radius: 5px
+	.sidebar__info
+		.info
+			border-top: 2px solid #16191f
+			padding-top: 20px
+			padding-left: 20px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				left: 4px
+				top: 29px
+				background-color: #24559e
+				width: 5px
+				height: 5px
+				display: inline-block
+				vertical-align: middle
+				margin-right: 10px
+				border-radius: 5px
 	.sidebar__button
 		top: 37px
 		right: -40px
