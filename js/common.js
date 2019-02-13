@@ -18,14 +18,6 @@ window.onload = function () {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  var hash = document.querySelectorAll(".tab");
-
-  for (var i = 0; i < hash.length; i++) {
-    hash[i].addEventListener("click", function (event) {
-      event.preventDefault();
-    });
-  }
-
   var menuButton = document.querySelector('.sidebar__button');
   var sidebar = document.querySelector('.sidebar');
   menuButton.addEventListener('click', function(){
@@ -66,6 +58,5 @@ document.addEventListener("DOMContentLoaded", function () {
     return i;
   };
   startTime();
-
 
 })
