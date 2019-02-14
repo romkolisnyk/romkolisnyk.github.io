@@ -88,14 +88,15 @@ a
 	.sidebar__info
 		.info
 			border-top: 2px solid #16191f
-			padding-top: 20px
+			padding-top: 15px
 			padding-left: 20px
 			position: relative
+			margin-bottom: 0
 			&::before
 				content: ''
 				position: absolute
 				left: 4px
-				top: 29px
+				top: 24px
 				background-color: #24559e
 				width: 5px
 				height: 5px
@@ -145,6 +146,7 @@ a
 	transition: .4s
 	.list
 		padding: 0
+		margin-bottom: 0
 	.contacts__item
 		display: inline-block
 		.contacts__icon
@@ -198,6 +200,7 @@ a
 				background-color: #1e2129
 				border-right: 1px solid #13151b
 				color: #c6c6c8
+				transition: .4s
 				&.active
 					background-color: #232731
 					color: #f7f7f7
@@ -210,12 +213,22 @@ a
 		opacity: 1
 		transform: translateX(0)
 
+@keyframes tabs-slide--right
+	0%
+		opacity: 0
+		transform: translateX(-100px)
+	100%
+		opacity: 1
+		transform: translateX(0)
+
 section
 	display: none
 	padding-top: 60px
 	&.active
 		display: block
-		animation: tabs-slide .4s ease forwards
+		animation: tabs-slide .5s ease forwards
+		&.right
+			animation: tabs-slide--right .5s ease forwards
 
 #projects
 	.projects__items
@@ -297,6 +310,7 @@ section
 #experience
 	.exp__items
 		padding: 20px
+		padding-top: 0
 		.exp__title
 			display: inline-block
 			margin-right: 20px
