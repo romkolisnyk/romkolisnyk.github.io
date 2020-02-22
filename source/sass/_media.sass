@@ -1,9 +1,10 @@
 @media only screen and (max-width: 1440px)
   body
     font-size: 14px
-  #projects .project__item .project__img
-    width: 220px
-  #about .about__media .about__img
+  #projects
+    .project__img
+      width: 220px
+  #about .about__img
     width: 270px
 
 @media only screen and (max-width: 992px)
@@ -15,30 +16,32 @@
       .sidebar__content
         transform: translateX(0)
       .contacts
-        border-top: 2px solid #16191f
+        border-top: 2px solid $darkestgray
         transform: translateX(0)
-        .contacts__item .contacts__link
-          &::before,span
-            opacity: 1
+      .contacts__item .contacts__link
+        &::before,span
+          opacity: 1
     .sidebar__content
       transform: translateX(-110px)
-    .logo__container
+    .logo
       margin-right: 45px
-      .logo__text
-        font-size: 30px
+    .logo__text
+      text-align: center
+      line-height: 1.2
     .contacts
       border-top: 2px solid transparent
       transform: translateX(327px)
-      .contacts__item .contacts__link
-        &::before,span
-          opacity: 0
-    .sidebar__button
+    .contacts__item .contacts__link
+      &::before,span
+        opacity: 0
+    .sidebar__menu-button
+      display: block
       right: 20px
   .main
     padding-left: 70px
     .nav
       width: calc(100% - 90px)
-  #projects .project__item .project__img
+  #projects .projects__img
     width: 220px
   #skills
     .skills__container
@@ -50,7 +53,7 @@
   #about
     .container
       flex-wrap: wrap
-    .about__media
+    .about__content--left
       display: flex
       justify-content: center
       align-items: center
@@ -64,33 +67,35 @@
     transform: translateX(-220px)
     .contacts
       transform: translateX(331px)
-    .sidebar__button
+    .sidebar__menu-button
       right: 15px
   .main
     padding-left: 60px
     .nav
       width: calc(100% - 60px)
       padding-right: 0
-      .tabs
-        flex-wrap: wrap
-        .tab
-          flex-grow: 1
-          padding: 5px 10px
+    .tabs
+      flex-wrap: wrap
+    .tabs__item
+      flex-grow: 1
+      padding: 5px 10px
     #clock
       display: none
   #projects
     .container
       padding: 0
-    .project__item
+    .projects__item
       margin: 10px
       flex-direction: column
       min-width: unset
       width: 100%
       text-align: center
-      .project__img
-        margin-right: 0
-        margin-bottom: 20px
-        height: unset
+    .project
+      flex-direction: column
+      text-align: center
+    .project__img
+      margin: 15px 0
+      height: unset
 
   #skills
     .skills__image
@@ -98,20 +103,26 @@
       width: 30px
       height: 30px
 
-  #experience .exp__items
-    padding: 0
-    .exp__title
+  #experience
+    .experience__items
+      padding: 0
+    .experience__item
+      padding: 15px 15px
+      margin: 15px 0 40px
+    .experience__title
       font-size: 18px
-    .exp__tech
+      margin: 0
+      margin-right: 20px
+    .experience__technologies
       padding-left: 0
       span
         font-size: 1em
-    .exp__content
+    .experience__content
       padding-left: 20px
   #about
     .container
       padding: 15px
-    .about__media .about__img
+    .about__img
       width: 100%
 @media only screen and (max-width: 480px)
   section
