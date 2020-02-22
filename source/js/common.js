@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // typing animation
 
-  const string = "Hi there and welcome! I am Roman, wed-developer from Kyiv.";
+  const string = "Hi there and dobriy den\'! I am Roman, wed-developer from Kyiv.";
   const letters = string.split("");
   const typingContainer = document.querySelector('.sidebar .info');
 
@@ -147,8 +147,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     }
-
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 });
