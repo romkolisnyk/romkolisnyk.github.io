@@ -131,7 +131,7 @@ a
       transform: rotate(0deg)
       transition: .25s ease-in-out
       &:nth-child(1)
-        top: 0px
+        top: 0
       &:nth-child(2)
         top: 8px
       &:nth-child(3)
@@ -242,6 +242,9 @@ section
     border-radius: 5px
     width: 44%
     min-width: 440px
+    transition: .3s
+    &:hover
+      background-color: $darkestgray
     &:last-child
       .project__description
         width: 100%
@@ -354,7 +357,12 @@ section
       width: 100%
   .about__title
     font-weight: 500
-    color: $red
+    color: $blue
     font-size: 1.1em
+    background-color: $darkestgray
+    display: inline-block
+    padding: 1px 30px
+    border-radius: 4px
+    margin: 5px 0
 
 @import "media"
