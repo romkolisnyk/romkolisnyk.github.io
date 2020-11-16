@@ -51,6 +51,10 @@
     padding: 0;
     width: 21cm;
     page-break-after: always;
+
+    &__body {
+      margin-top: 10px;
+    }
   }
 
   .print-button {
