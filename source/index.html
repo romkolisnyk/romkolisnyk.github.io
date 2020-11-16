@@ -1,479 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
+    <meta charset="utf-8">
+    <title>Roman Kolisnyk / Frontend developer</title>
+    <meta name="description" content="Dzh-dzh-dzh! Front in da house.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" href="img/fav/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/fav/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/fav/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/fav/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/fav/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/fav/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/fav/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/fav/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/fav/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/fav/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/favicon-180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/fav/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/fav/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16.png">
+    <meta name="msapplication-TileColor" content="#232731">
+    <meta name="msapplication-TileImage" content="img/fav/favicon-144.png">
+    <meta name="theme-color" content="#232731">
 
-  <meta charset="utf-8">
-
-  <title>Roman Kolisnyk - web-developer</title>
-  <meta name="description" content="Dzh-dzh-dzh! Web-developer in da house.">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <meta property="og:image" content="">
-  <link rel="shortcut icon" href="img/fav/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/fav/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="57x57" href="img/fav/favicon-57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/fav/favicon-60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/fav/favicon-72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/fav/favicon-76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/fav/favicon-114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/fav/favicon-120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/fav/favicon-144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/fav/favicon-152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/fav/favicon-180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/fav/favicon-192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/fav/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16.png">
-  <meta name="msapplication-TileColor" content="#232731">
-  <meta name="msapplication-TileImage" content="img/fav/favicon-144.png">
-
-  <meta name="theme-color" content="#232731">
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/main.css">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
 
   <body>
 
-    <div class="page">
-      <div class="preloader"></div>
+    <main class="page">
 
-      <aside class="sidebar">
-        <div class="sidebar__content">
-          <div class="sidebar__content--top">
-            <div class="logo">
-              <img src="img/images/rock.svg" alt="Rock sign" class="logo__img">
-              <p class="logo__text">Rockman Kolisnyk</p>
+      <section class="page__head">
+
+        <button class="print-button" onClick="window.print()">
+          <svg class="print-button__icon">
+            <use xlink:href="img/ico/sprite.svg#print" href="img/ico/sprite.svg#print"></use>
+          </svg>
+        </button>
+
+        <div class="summary">
+          <img class="summary__img" src="./img/images/me.jpg" alt="my photo">
+          <div class="summary__info">
+            <h1 class="summary__title">Roman Kolisnyk / Frontend developer</h1>
+            <div class="summary__contacts">
+              <div class="contacts">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <a href="https://goo.gl/maps/BuvjooM9yfk" class="contacts__link" target="_blank">
+                      <svg class="contacts__icon">
+                        <use xlink:href="img/ico/sprite.svg#maps-and-flags" href="img/ico/sprite.svg#maps-and-flags"></use>
+                      </svg>
+                      <span>Ukraine, Kyiv</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a href="tel:+380935624116" class="contacts__link">
+                      <svg class="contacts__icon">
+                        <use xlink:href="img/ico/sprite.svg#call-answer" href="img/ico/sprite.svg#call-answer"></use>
+                      </svg>
+                      <span>+38(093)562-41-16</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a href="mailto:moofizzz@gmail.com" class="contacts__link">
+                      <svg class="contacts__icon">
+                        <use xlink:href="img/ico/sprite.svg#close-envelope" href="img/ico/sprite.svg#close-envelope"></use>
+                      </svg>
+                      <span>moofizzz@gmail.com</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a href="tg://resolve?domain=Rmn_Klsnk" class="contacts__link">
+                      <svg class="contacts__icon">
+                        <use xlink:href="img/ico/sprite.svg#telegram" href="img/ico/sprite.svg#telegram"></use>
+                      </svg>
+                      <span>@Rmn_Klsnk</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a href="https://github.com/romkolisnyk" class="contacts__link" target="_blank">
+                      <svg class="contacts__icon">
+                        <use xlink:href="img/ico/sprite.svg#github" href="img/ico/sprite.svg#github"></use>
+                      </svg>
+                      <span>romkolisnyk</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a href="https://www.linkedin.com/in/roman-kolisnyk/" class="contacts__link" target="_blank">
+                      <svg class="contacts__icon">
+                        <use xlink:href="img/ico/sprite.svg#linkedin" href="img/ico/sprite.svg#linkedin"></use>
+                      </svg>
+                      <span>roman-kolisnyk</span>
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <a href="https://www.instagram.com/rockman_kolisnyk/" class="contacts__link" target="_blank">
+                      <svg class="contacts__icon">
+                        <use xlink:href="img/ico/sprite.svg#instagram" href="img/ico/sprite.svg#instagram"></use>
+                      </svg>
+                      <span>rockman_kolisnyk</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="sidebar__content--middle">
-              <p class="info"></p>
-            </div>
-          </div>
-          <div class="sidebar__content--bottom">
-            <div class="contacts">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <a href="https://goo.gl/maps/BuvjooM9yfk" class="contacts__link" target="_blank">
-                    <svg class="contacts__icon">
-                      <use xlink:href="img/ico/contacts.svg#maps-and-flags" href="img/ico/contacts.svg#maps-and-flags">
-                      </use>
-                    </svg><span>Ukraine, Kyiv</span></a>
-                </li>
-                <li class="contacts__item">
-                  <a href="tel:+380935624116" class="contacts__link"> <svg class="contacts__icon">
-                    <use xlink:href="img/ico/contacts.svg#call-answer" href="img/ico/contacts.svg#call-answer">
-                    </use>
-                  </svg><span>+38(093)562-41-16</span></a>
-                </li>
-                <li class="contacts__item">
-                  <a href="mailto:firmoflasher@gmail.com" class="contacts__link"> <svg class="contacts__icon">
-                    <use xlink:href="img/ico/contacts.svg#close-envelope" href="img/ico/contacts.svg#close-envelope">
-                    </use>
-                  </svg><span>firmoflasher@gmail.com</span></a>
-                </li>
-                <li class="contacts__item">
-                  <a href="tg://resolve?domain=Rmn_Klsnk" class="contacts__link"> <svg class="contacts__icon">
-                    <use xlink:href="img/ico/contacts.svg#telegram" href="img/ico/contacts.svg#telegram">
-                    </use>
-                  </svg><span>telegram/@Rmn_Klsnk</span></a>
-                </li>
-                <li class="contacts__item">
-                  <a href="https://github.com/romkolisnyk" class="contacts__link" target="_blank"> <svg class="contacts__icon">
-                    <use xlink:href="img/ico/contacts.svg#github" href="img/ico/contacts.svg#github">
-                    </use>
-                  </svg><span>github/romkolisnyk</span></a>
-                </li>
-                <li class="contacts__item">
-                  <a href="https://www.linkedin.com/in/roman-kolisnyk/" class="contacts__link" target="_blank"> <svg class="contacts__icon">
-                    <use xlink:href="img/ico/contacts.svg#linkedin" href="img/ico/contacts.svg#linkedin">
-                    </use>
-                  </svg><span>linkedin/roman-kolisnyk</span></a>
-                </li>
-                <li class="contacts__item">
-                  <a href="https://www.instagram.com/rockman_kolisnyk/" class="contacts__link" target="_blank"> <svg class="contacts__icon">
-                    <use xlink:href="img/ico/contacts.svg#instagram" href="img/ico/contacts.svg#instagram">
-                    </use>
-                  </svg><span>instagram/rockman_kolisnyk</span></a>
-                </li>
-                <li class="contacts__item">
-                  <a href="skype:moofiko?chat" class="contacts__link"> <svg class="contacts__icon">
-                    <use xlink:href="img/ico/contacts.svg#skype" href="img/ico/contacts.svg#skype">
-                    </use>
-                  </svg><span>skype/moofiko</span></a>
-                </li>
-              </ul>
-            </div>
+            <p class="summary__about">Just a good guy, skilled in HTML, CSS, JS, visualism, minimalism, perfectionism and kindness.</p>
           </div>
         </div>
-        <div class="sidebar__menu-button"><span></span><span></span><span></span></div>
-      </aside>
+      </section>
 
-      <main class="main">
-        <nav class="nav">
-          <ul class="tabs">
-            <li class="tabs__item active">projects</li>
-            <li class="tabs__item">skills</li>
-            <li class="tabs__item">experience</li>
-            <li class="tabs__item">about_me</li>
+      <section class="page__body">
+        <div class="main-info">
+          <h2 class="main-info__title">Experience</h2>
+          <ul class="main-info__list">
+            <li class="main-info__item">
+              <div class="experience">
+                <p class="experience__title"><b>PDFfiller</b>&nbsp;/ Frontend developer</p>
+                <p class="experience__period">Oct 2019<span class="experience__timeline"></span>now</p>
+                <ul class="experience__list">
+                  <li class="experience__item">Creating UI library for company's products</li>
+                  <li class="experience__item">Maintaining & improving existing code</li>
+                  <li class="experience__item">Refactoring Pug components to React components</li>
+                  <li class="experience__item">Writing tests</li>
+                  <li class="experience__item">Improving products accessibility</li>
+                  <li class="experience__item">Creating pages for web applications</li>
+                  <li class="experience__item">Code review</li>
+                  <li class="experience__item">Cooperation with backend devs, designers</li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-info__item">
+              <div class="experience">
+                <p class="experience__title"><b>Hexa</b>&nbsp;/ Frontend developer</p>
+                <p class="experience__period">Sep 2018<span class="experience__timeline"></span>Oct 2019</p>
+                <ul class="experience__list">
+                  <li class="experience__item">Creating user-friendly, interactive web pages</li>
+                  <li class="experience__item">Creating order-form and user-cabinet</li>
+                  <li class="experience__item">Maintaining & improving existing code</li>
+                  <li class="experience__item">Building responsive emails</li>
+                  <li class="experience__item">Optimizing sites performance and speed</li>
+                  <li class="experience__item">Markup testing</li>
+                  <li class="experience__item">Cooperation with backend devs, designers</li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-info__item">
+              <div class="experience">
+                <p class="experience__title"><b>Freelance</b>&nbsp;/ Frontend Developer & Designer</p>
+                <p class="experience__period">Jan 2018<span class="experience__timeline"></span>Sep 2018</p>
+                <ul class="experience__list">
+                  <li class="experience__item">Creating of Internet stores, landing pages</li>
+                  <li class="experience__item">Sites redesign, optimization and debugging</li>
+                  <li class="experience__item">Writing additional functionality/modules</li>
+                  <li class="experience__item">Creating designs and landing layouts on CMS</li>
+                  <li class="experience__item">Creating products catalogs and content</li>
+                  <li class="experience__item">Setting up hostings</li>
+                  <li class="experience__item">SEO</li>
+                  <li class="experience__item">Support and maintenance of the sites</li>
+                </ul>
+              </div>
+            </li>
           </ul>
-          <div id="clock"></div>
-        </nav>
+        </div>
 
-        <section id="projects" class="projects active">
-          <div class="projects__container container">
-            <ul class="projects__list">
-
-              <li class="projects__item">
-                <a class="project" href="/portfolio1/" target="_blank">
-                  <img src="img/portfolio/port1.png" alt="portfolio 1" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">sample site #1</p>
-                    <p class="project__description">multipage site on HTML, SASS, pure JS (ES6+, compiled by Babel)</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="/Rock-Paper-Scissors/" target="_blank">
-                  <img src="img/portfolio/rps.png" alt="rock-paper-scissors" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">Rock/Paper/Scissors</p>
-                    <p class="project__description">Famous simple game Rock-Paper-Scissors on vanillaJS (ES6+)</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="https://bmwfix.com.ua" target="_blank">
-                  <img src="img/portfolio/bmwfix.png" alt="bmwfix" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">bmwfix.com.ua</p>
-                    <p class="project__description">automobile spare parts internet-shop on CMS Web-Autoresource (PHP+VueJS)</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="/portfolio2/" target="_blank">
-                  <img src="img/portfolio/port2.png" alt="portfolio 2" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">sample site #2</p>
-                    <p class="project__description">multipage site on HTML, SASS, jQuery</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="https://xn--80abnquv.xn--j1amh/" target="_blank">
-                  <img src="img/portfolio/bas.png" alt="басейн" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">басейн.укр</p>
-                    <p class="project__description">pools and stuff internet-shop on CMS BlackLamp(Yii2)</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="http://patrubok.com.ua" target="_blank">
-                  <img src="img/portfolio/patr.png" alt="patrubok" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">patrubok.com.ua</p>
-                    <p class="project__description">automobile spare parts internet-shop on CMS Web-Autoresource(PHP+VueJS)</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="/portfolio_v2-outdated/" target="_blank">
-                  <img src="img/portfolio/portfolio.png" alt="portfolio old" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">freelance site</p>
-                    <p class="project__description">old promo site for freelance projects (painful memories)</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="/portfolio4/" target="_blank">
-                  <img src="img/portfolio/port4.png" alt="portfolio 4" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">sample site #4</p>
-                    <p class="project__description">multipage site on HTML, SASS, pure JS (ES6+) + jQuery</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="https://sp-carparts.com.ua" target="_blank">
-                  <img src="img/portfolio/sp.png" alt="sp-carparts" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">sp-carparts.com.ua</p>
-                    <p class="project__description">automobile spare parts internet-shop on CMS Web-Autoresource(PHP+VueJS)</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="/portfolio5/" target="_blank">
-                  <img src="img/portfolio/port5.png" alt="portfolio 5" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">sample site #5</p>
-                    <p class="project__description">multipage site on HTML, SASS, jQuery</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="/portfolio3/" target="_blank">
-                  <img src="img/portfolio/port3.png" alt="portfolio 3" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">sample site #3</p>
-                    <p class="project__description">multipage site on HTML, SASS, jQuery</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="/portfolio6/" target="_blank">
-                  <img src="img/portfolio/port6.png" alt="portfolio 6" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">sample site #6</p>
-                    <p class="project__description">multipage site on HTML, SASS, pure JS (ES6+)</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="https://plenka.kiev.ua" target="_blank">
-                  <img src="img/portfolio/plenka.png" alt="plenka.kiev.ua" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">plenka.kiev.ua</p>
-                    <p class="project__description">membranes and stuff internet-shop on CMS Wordpress(WooCommerce)</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="http://drova.zzz.com.ua" target="_blank">
-                  <img src="img/portfolio/drova.png" alt="drova" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">drova.zzz.com.ua</p>
-                    <p class="project__description">firewood internet-shop on CMS Textolite</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                <a class="project" href="https://cafeluna.com.ua" target="_blank">
-                  <img src="img/portfolio/luna.png" alt="luna cafe" class="project__img">
-                  <div class="project__content">
-                    <p class="project__title">cafeluna.com.ua</p>
-                    <p class="project__description">restaurant business site on CMS Textolite</p>
-                  </div>
-                </a>
-              </li>
-
-              <li class="projects__item">
-                  <p class="project__description">...and so on</p>
-              </li>
-
-            </ul>
-          </div>
-        </section>
-
-        <section id="skills" class="skills">
-          <div class="skills__container container">
-            <div class="skills__images">
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#html" href="img/ico/skills.svg#html">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#css" href="img/ico/skills.svg#css">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#js" href="img/ico/skills.svg#js">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#php" href="img/ico/skills.svg#php">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#sass" href="img/ico/skills.svg#sass">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#jq" href="img/ico/skills.svg#jq">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#bs" href="img/ico/skills.svg#bs">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#webpack" href="img/ico/skills.svg#webpack">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#git" href="img/ico/skills.svg#git">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#gh" href="img/ico/skills.svg#gh">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#gl" href="img/ico/skills.svg#gl">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#react" href="img/ico/skills.svg#react">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#gulp" href="img/ico/skills.svg#gulp">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#npm" href="img/ico/skills.svg#npm">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#trello" href="img/ico/skills.svg#trello">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#sketch" href="img/ico/skills.svg#sketch">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#jira" href="img/ico/skills.svg#jira">
-                </use>
-              </svg>
-              <svg class="skills__image">
-                <use xlink:href="img/ico/skills.svg#pug" href="img/ico/skills.svg#pug">
-                </use>
-              </svg>
-            </div>
-            <div class="skills__content">
-              <p class="skills__title">Languages:</p>
-              <span>Ukrainian (native), Russian (free), English (Intermediate+ level)</span>
-              <p class="skills__title">Development languages / technologies:</p>
-              <span>HTML /&gt;, CSS {}, Javascript =>, PHP ?&gt;</span>
-              <p class="skills__title">Libraries / frameworks / preprocessors:</p>
-              <span>Pug (Jade), jQuery, Ajax, SASS, SCSS, Bootstrap, React (learning now)</span>
-              <p class="skills__title">Methodologies / layouts / other stuff:</p>
-              <span>BEM, crossbrowser & adaptive layout, CSS & SVG animation, valid & semantic & clean code, pixel-perfect</span>
-              <p class="skills__title">Instruments:</p>
-              <span>Gulp, Webpack, Git, console, npm, bower, yarn</span>
-              <p class="skills__title">CMS:</p>
-              <span>Wordpress, Opencart, BlackLamp, GetSimple, Web-autoresource, Textolite</span>
-              <p class="skills__title">Graphic apps / tools:</p>
-              <span>Sketch, Avocode, Zeplin, Figma</span>
-              <p class="skills__title">Corporate apps:</p>
-              <span>Jira, Slack, Bitrix24, Redmine, Trello</span>
-            </div>
-          </div>
-        </section>
-
-        <section id="experience" class="experience">
-          <div class="experience__container container">
-            <div class="experience__items">
-
-              <div class="experience__item">
-                <p class="experience__title">PDFfiller</p>
-                <p class="experience__date">10.2019 - now</p>
-                <ul class="experience__content">
-                  <li>Creating components and modules for editors</li>
-                  <li>Creating landing page for product</li>
-                  <li>Debugging</li>
+        <div class="additional-info">
+          <ul class="additional-info__list">
+            <li class="additional-info__item">
+              <h3 class="additional-info__title">Education</h3>
+              <span>NTUU "Kyiv Polytechnic Institute"<br>Automation of electromechanical systems and electric drive</span>
+            </li>
+            <li class="additional-info__item">
+              <h3 class="additional-info__title">Skills</h3>
+              <div class="skills">
+                <ul class="skills__list">
+                  <li class="skills__item">
+                    <p class="skills__title"><b>Langs:</b>&nbsp;
+                      <span>UA (native), RU (free), EN (Intermediate+)</span>
+                    </p>
+                  </li>
+                  <li class="skills__item">
+                    <p class="skills__title"><b>Dev langs:</b>&nbsp;
+                      <span>&lt;HTML/&gt;, .CSS{}, (JS)=&gt;, &lt;PHP?&gt;</span>
+                    </p>
+                  </li>
+                  <li class="skills__item">
+                    <p class="skills__title"><b>Libs/preprocessors:</b>&nbsp;
+                      <span>Pug, React, jQuery, Sass</span>
+                    </p>
+                  </li>
+                  <li class="skills__item">
+                    <p class="skills__title"><b>Methodologies/specs:</b>&nbsp;
+                      <span>BEM, A11Y, crossbrowser &amp; adaptive layout, animation, valid &amp; semantic code</span>
+                    </p>
+                  </li>
+                  <li class="skills__item">
+                    <p class="skills__title"><b>Instruments:</b>&nbsp;
+                      <span>Gulp, Webpack, Git, console</span>
+                    </p>
+                  </li>
+                  <li class="skills__item">
+                    <p class="skills__title"><b>Graphic apps:</b>&nbsp;
+                      <span>Sketch, Avocode, Zeplin, Figma</span>
+                    </p>
+                  </li>
+                  <li class="skills__item">
+                    <p class="skills__title"><b>Corporate services:</b>&nbsp;
+                      <span>Jira, Slack, Bitrix24, Trello</span>
+                    </p>
+                  </li>
                 </ul>
-                <p class="experience__technologies"><span class="red">Languages:</span>&nbsp;Javascript, React, PUG, SCSS</p>
               </div>
-
-              <div class="experience__item">
-                <p class="experience__title">HEXA LLC</p>
-                <p class="experience__date">09.2018 - 10.2019</p>
-                <ul class="experience__content">
-                  <li>Creating sites from scratch</li>
-                  <li>Writing additional functionality/plugins</li>
-                  <li>Landing layouts on CMS</li>
-                  <li>Creating emails & banners</li>
-                  <li>Debugging</li>
-                  <li>Manual QA testing</li>
-                  <li>Working with Back-end team</li>
+            </li>
+            <li class="additional-info__item">
+              <h3 class="additional-info__title">Interests</h3>
+              <div class="interests">
+                <ul class="interests__list">
+                  <li class="interests__item">
+                    - Guitars & rock/metal music
+                  </li>
+                  <li class="interests__item">
+                    - Technologies and programming
+                  </li>
+                  <li class="interests__item">
+                    - Designs & minimalism
+                  </li>
+                  <li class="interests__item">
+                    - Ping-pong & table soccer
+                  </li>
+                  <li class="interests__item">
+                    - Traveling
+                  </li>
+                  <li class="interests__item">
+                    - Cinematography
+                  </li>
                 </ul>
-                <p class="experience__technologies"><span class="red">Languages:</span>&nbsp;Javascript & jQuery & Ajax, PHP, HTML, CSS & SASS</p>
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-              <div class="experience__item">
-                <p class="experience__title">FREELANCE</p>
-                <p class="experience__date">01.2018 - 09.2018</p>
-                <ul class="experience__content">
-                  <li>Creating of Internet shops, landing pages and turnkey sites</li>
-                  <li>Redesign of sites, optimization and debugging</li>
-                  <li>Writing additional functionality/modules</li>
-                  <li>Creating designs and landing layouts on CMS</li>
-                  <li>Set up hostings & servers</li>
-                  <li>SEO</li>
-                </ul>
-                <p class="experience__technologies"><span class="red">Languages:</span>&nbsp;Javascript & jQuery, PHP & Yii2, HTML & Pug, CSS & SASS</p>
-              </div>
+    </main>
 
-              <div class="experience__item">
-                <p class="experience__title">SP-CARPARTS & PATRUBOK</p>
-                <p class="experience__date">07.2017 - 08.2018</p>
-                <ul class="experience__content">
-                  <li>Redesign of the site, landing layout on CMS</li>
-                  <li>Writing new functionality</li>
-                  <li>Code optimization and debugging</li>
-                  <li>Creating product catalogs and content</li>
-                  <li>SEO</li>
-                  <li>Support and maintenance of the site</li>
-                </ul>
-                <p class="experience__technologies"><span class="red">Languages:</span>&nbsp;Javascript & jQuery & Ajax, PHP, HTML, CSS & SASS, VueJS</p>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <section id="about" class="about">
-          <div class="about__container container">
-            <div class="about__content--left">
-              <img src="img/images/me.jpg" alt="me" class="about__img">
-              <a href="Kolisnyk Roman_CV_ENG.pdf" class="about__resume" target="_blank">Watch my resume</a>
-            </div>
-            <div class="about__content--right">
-              <div class="about__item">
-                <p class="about__title">Education</p>
-                <p>National Technical University of Ukraine "Kyiv Polytechnic Institute"<br>Faculty of Electrical Engineering and Automation<br>Department of automation of electromechanical systems and electric drive</p>
-              </div>
-              <p class="about__title">Interests</p>
-              <ul>
-                <li>Technologies and programming</li>
-                <li>Electroguitars and rock/metal music</li>
-                <li>Bodybuilding & ping-pong</li>
-                <li>Interesting people</li>
-                <li>Traveling</li>
-                <li>Films with a taste</li>
-              </ul>
-              <p class="about__title">Short info</p>
-              <p>Hi there! I'm 25, and about 2+ years I work as a web developer and just adore this profession. I have experience working with heavy projects, I use modern tools for web development, frameworks, libraries, preprocessors, task managers, console and "push" changes to git. I know the principles of site building, BEM methodology, the principles of speed optimization, semantic, clean and clear code. I like beautiful, fast and thoughtful interfaces. I'm not afraid of responsibility, I do my work seriously and always try to be better than yesterday.</p>
-            </div>
-          </div>
-        </section>
-
-      </main>
-    </div>
-
-    <script src="js/scripts.js"></script>
   </body>
 
 </html>

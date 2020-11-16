@@ -11,9 +11,6 @@ import include from 'posthtml-include';
 import w3cjs from 'gulp-w3cjs';
 import del from 'del';
 import htmlmin from 'gulp-htmlmin';
-import jsmin from 'gulp-uglify';
-import babel from 'gulp-babel';
-import concat from 'gulp-concat';
 
 const server = browserSync.create();
 
@@ -27,10 +24,9 @@ gulp.task('copy', () => gulp.src([
 
 gulp.task('clean', () => del('build'));
 
-gulp.task('css', () => gulp.src('source/sass/main.sass')
+gulp.task('css', () => gulp.src('source/styles/main.scss')
   .pipe(plumber())
-  .pipe(sass({
-    includePaths: require('node-normalize-scss').includePaths}))
+  .pipe(sass())
   .pipe(postcss([
     autoprefixer(),
   ]))
@@ -52,10 +48,9 @@ gulp.task('server', () => {
     ui: false,
   });
 
-  gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css'));
+  gulp.watch('source/styles/**/*.{scss, sass}', gulp.series('css'));
   gulp.watch('source/img/**/*', gulp.series('copy'));
   gulp.watch('source/*.html', gulp.series('html', 'refresh'));
-  gulp.watch('source/js/*.js', gulp.series('js', 'refresh'));
 });
 
 gulp.task('images', () => gulp.src('source/img/**/*.{png,jpg,svg}')
@@ -79,12 +74,6 @@ gulp.task('html', () => gulp.src('source/*.html')
   }))
   .pipe(gulp.dest('build')));
 
-gulp.task('js', () => gulp.src('source/js/**/*.js')
-  .pipe(concat('scripts.js'))
-  .pipe(babel({ presets: ['@babel/env'] }))
-  .pipe(jsmin())
-  .pipe(gulp.dest('build/js')));
+gulp.task('start', gulp.series('clean', 'copy', 'css', 'html', 'server'));
 
-gulp.task('start', gulp.series('clean', 'copy', 'css', 'html', 'js', 'server'));
-
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'html', 'js', 'images', 'server'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'html', 'images', 'server'));

@@ -1,0 +1,58 @@
+@media screen and (max-width: 800px) {
+
+  .page {
+    margin: 0;
+    padding: 30px;
+
+    &__body {
+      flex-direction: column;
+    }
+  }
+
+  .summary {
+    flex-direction: column;
+
+    &__img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      text-align: center;
+    }
+  }
+
+  .main-info {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .page {
+    padding: 15px;
+  }
+
+  .main-info {
+    padding: 15px 10px;
+  }
+}
+
+@media print {
+
+  *::before {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    padding: 0;
+    width: 21cm;
+    page-break-after: always;
+  }
+
+  .print-button {
+    display: none;
+  }
+}

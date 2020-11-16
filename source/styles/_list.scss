@@ -1,0 +1,36 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &--type {
+
+    &--unordered {
+
+      .list__item {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 8px;
+          width: 4px;
+          height: 4px;
+          background-color: #515151;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &--display {
+
+    &--inline-block {
+
+      .list__item {
+        display: inline-block;
+      }
+    }
+  }
+}
