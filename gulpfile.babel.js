@@ -20,9 +20,9 @@ gulp.task('copy', () => gulp.src([
 ], {
   base: 'source',
 })
-  .pipe(gulp.dest('build')));
+  .pipe(gulp.dest('docs')));
 
-gulp.task('clean', () => del('build'));
+gulp.task('clean', () => del('docs'));
 
 gulp.task('css', () => gulp.src('source/styles/main.scss')
   .pipe(plumber())
@@ -31,7 +31,7 @@ gulp.task('css', () => gulp.src('source/styles/main.scss')
     autoprefixer(),
   ]))
   .pipe(csso())
-  .pipe(gulp.dest('build/css'))
+  .pipe(gulp.dest('docs/css'))
   .pipe(server.stream()));
 
 gulp.task('refresh', (done) => {
@@ -41,7 +41,7 @@ gulp.task('refresh', (done) => {
 
 gulp.task('server', () => {
   server.init({
-    server: 'build/',
+    server: 'docs/',
     notify: false,
     open: true,
     cors: true,
@@ -59,7 +59,7 @@ gulp.task('images', () => gulp.src('source/img/**/*.{png,jpg,svg}')
     imagemin.jpegtran({ progressive: true }),
     imagemin.svgo(),
   ]))
-  .pipe(gulp.dest('build/img')));
+  .pipe(gulp.dest('docs/img')));
 
 gulp.task('html', () => gulp.src('source/*.html')
   .pipe(posthtml([
@@ -72,8 +72,8 @@ gulp.task('html', () => gulp.src('source/*.html')
     removeComments: true,
     removeEmptyAttributes: true,
   }))
-  .pipe(gulp.dest('build')));
+  .pipe(gulp.dest('docs')));
 
 gulp.task('start', gulp.series('clean', 'copy', 'css', 'html', 'server'));
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'html', 'images', 'server'));
+gulp.task('docs', gulp.series('clean', 'copy', 'css', 'html', 'images', 'server'));
