@@ -1,5 +1,8 @@
-@import "colors";
-@import "animations";
+@import 'colors';
+@import 'animations';
+@import 'gaps';
+
+// --- BASE STYLES ---
 
 ::selection {
   background-color: $blue;
@@ -14,9 +17,19 @@ html, body {
   margin: 0;
 }
 
-a {
+a, button {
   text-decoration: none;
   color: currentColor;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px $blue;
+    border-radius: 2px;
+  }
 }
 
 button {
@@ -31,16 +44,22 @@ ul {
   margin: 0;
 }
 
+p {
+  margin: 4px 0;
+}
+
 body {
   font-size: 14px;
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   overflow-x: hidden;
   color: $darkgray;
   background-color: $lightgray;
 }
+
+// --- PAGE STYLES ---
 
 .page {
   overflow: hidden;
@@ -66,53 +85,53 @@ body {
   color: $gray;
   width: 36px;
   height: 36px;
-  transition: 0.3s;
 
   &__icon {
     width: 100%;
     height: 100%;
     fill: currentColor;
   }
-
-  &:hover {
-    color: $darkgray;
-  }
 }
+
+// --- SUMMARY STYLES ---
 
 .summary {
   display: flex;
   align-items: center;
 
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
-    margin-top: 0;
-    line-height: 1;
+    margin: 0;
   }
 
   &__img {
-    margin-right: 20px;
     width: 190px;
     height: 100%;
     border-radius: 6px;
   }
 
   &__about {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
+// --- CONTACTS STYLES ---
+
 .contacts {
 
-  &__item {
-    display: inline-block;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
   }
 
   &__icon {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     margin-right: 8px;
     fill: $blue;
   }
@@ -121,15 +140,15 @@ body {
     display: flex;
     align-items: center;
     font-size: 13px;
-    margin: 5px 5px 5px 0;
-    position: relative;
+    padding: 4px;
   }
 }
+
+// --- MAIN-INFO STYLES ---
 
 .main-info {
   background-color: $lightgray;
   padding: 20px;
-  margin-right: 20px;
   border-radius: 6px;
   min-width: 56%;
 
@@ -139,66 +158,45 @@ body {
   }
 }
 
+// --- EXPERIENCE STYLES ---
+
 .experience {
 
-  &__list {
-    padding-left: 20px;
-  }
-
-  &__item {
-    position: relative;
-    padding-left: 15px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: calc(50% - 2px);
-      width: 4px;
-      height: 4px;
-      background-color: currentColor;
-      border-radius: 50%;
-    }
-  }
-
   &__title {
-    margin-bottom: 0;
     color: $blue;
     font-size: 15px;
   }
 
   &__period {
     font-size: 10px;
-    margin-top: 0;
-    margin-bottom: 5px;
     display: flex;
     align-items: center;
   }
 
   &__timeline {
-    display: inline-block;
-    height: 1px;
     flex-grow: 1;
     border-top: 1px dashed currentColor;
-    margin: 0 8px -1px;
+    margin: 0 10px -1px;
   }
 }
 
+// --- ADDITIONAL STYLES ---
+
 .additional-info {
 
-  &__title {
-    margin-top: 0;
+  &__head {
+    margin: 0;
+    padding: 4px 10px;
     text-align: center;
+    border-bottom: 1px solid currentColor;
+  }
 
-    &::before {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 1px;
-      background-color: currentColor;
-      left: 0;
-      top: 40px;
-    }
+  &__body {
+    padding: 8px 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__list {
@@ -208,34 +206,38 @@ body {
   }
 
   &__item {
-    box-shadow: inset 0 0 0 1px currentColor;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid currentColor;
     border-radius: 6px;
-    padding: 6px 10px;
-    position: relative;
     flex-grow: 1;
+  }
+}
 
-    &:not(:last-child) {
-      margin-bottom: 20px;
+// --- LIST STYLES ---
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  &--type--dotted {
+
+    .list__item {
+      position: relative;
+      padding-left: 16px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.7em;
+        width: 4px;
+        height: 4px;
+        background-color: currentColor;
+        border-radius: 50%;
+      }
     }
   }
 }
 
-.skills {
-
-  &__title {
-    margin-bottom: 0;
-  }
-}
-
-.interests {
-
-  &__item {
-    line-height: 2;
-
-    &::before {
-      content: '- ';
-    }
-  }
-}
-
-@import "media";
+@import 'media';

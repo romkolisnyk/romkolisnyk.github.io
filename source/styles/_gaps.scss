@@ -1,0 +1,11 @@
+._gap {
+
+  $gaps: (2, 4, 8, 12, 20);
+
+  @each $gap in $gaps {
+
+    &--#{$gap} {
+      gap: $gap + px;
+    }
+  }
+}

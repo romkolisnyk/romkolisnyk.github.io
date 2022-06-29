@@ -1,16 +1,15 @@
 import gulp from 'gulp';
-import sass from 'gulp-sass';
+import gulpSass from 'gulp-sass';
+import dartSass from 'sass';
 import plumber from 'gulp-plumber';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browserSync from 'browser-sync';
 import imagemin from 'gulp-imagemin';
 import csso from 'gulp-csso';
-import posthtml from 'gulp-posthtml';
-import include from 'posthtml-include';
-import w3cjs from 'gulp-w3cjs';
 import del from 'del';
 import htmlmin from 'gulp-htmlmin';
+const sass = gulpSass(dartSass);
 
 const server = browserSync.create();
 
@@ -26,10 +25,8 @@ gulp.task('clean', () => del('docs'));
 
 gulp.task('css', () => gulp.src('source/styles/main.scss')
   .pipe(plumber())
-  .pipe(sass())
-  .pipe(postcss([
-    autoprefixer(),
-  ]))
+  .pipe(sass.sync().on('error', sass.logError))
+  .pipe(postcss([autoprefixer()]))
   .pipe(csso())
   .pipe(gulp.dest('docs/css'))
   .pipe(server.stream()));
@@ -62,10 +59,6 @@ gulp.task('images', () => gulp.src('source/img/**/*.{png,jpg,svg}')
   .pipe(gulp.dest('docs/img')));
 
 gulp.task('html', () => gulp.src('source/*.html')
-  .pipe(posthtml([
-    include(),
-  ]))
-  .pipe(w3cjs())
   .pipe(htmlmin({
     collapseWhitespace: true,
     collapseInlineTagWhitespace: true,
