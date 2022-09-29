@@ -116,6 +116,8 @@ body {
 
   &__about {
     margin: 0;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 
@@ -148,13 +150,14 @@ body {
 
 .main-info {
   background-color: $lightgray;
-  padding: 20px;
+  padding: 10px 20px 20px;
   border-radius: 6px;
   min-width: 56%;
 
   &__title {
     margin-top: 0;
     line-height: 1;
+    margin-bottom: 10px;
   }
 }
 
