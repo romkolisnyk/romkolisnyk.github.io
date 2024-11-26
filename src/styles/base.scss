@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  position: relative;
+  background-color: var(--color-lightgray);
+  min-width: 320px;
+  overflow-x: hidden;
+  color: var(--color-darkgray);
+  line-height: 1.65;
+  font-family: "JetBrains Mono", monospace;
+  padding: 3rem;
+}
+
+a {
+  transition: color 0.2s;
+  color: currentColor;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: var(--font-size-m);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+:focus-visible {
+  box-shadow:
+    0 0 0 1px var(--color-white),
+    0 0 0 3px var(--color-primary);
+}

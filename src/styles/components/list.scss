@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-m);
+
+  &--type--dotted {
+    .list__item {
+      position: relative;
+      padding-left: 1rem;
+
+      &::before {
+        position: absolute;
+        top: 0.7em;
+        left: 0;
+        border-radius: 50%;
+        background-color: currentColor;
+        width: 0.25rem;
+        height: 0.25rem;
+        content: "";
+      }
+    }
+  }
+}

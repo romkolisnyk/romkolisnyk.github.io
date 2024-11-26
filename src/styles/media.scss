@@ -1,0 +1,34 @@
+@media screen and (max-width: 992px) {
+  body {
+    padding: 0;
+  }
+
+  .page {
+    margin: 0;
+    padding: 30px;
+
+    &__body {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .summary__img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    padding: 16px;
+  }
+
+  .summary {
+    align-items: center;
+  }
+}
+
+@page {
+  size: 1290px 1590px;
+}

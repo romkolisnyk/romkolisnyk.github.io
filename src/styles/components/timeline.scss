@@ -1,0 +1,13 @@
+.timeline {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0;
+  color: var(--color-gray);
+  font-size: var(--font-size-xxs);
+
+  &__separator {
+    flex-grow: 1;
+    margin: 0 0.8rem -1px;
+    border-top: 1px dashed currentColor;
+  }
+}

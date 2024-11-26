@@ -1,0 +1,14 @@
+.summary {
+  display: flex;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  &__img {
+    max-width: 12.5rem;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,9 @@
+._fxd {
+  $values: (row);
+
+  @each $value in $values {
+    &--#{$value} {
+      flex-direction: $value;
+    }
+  }
+}

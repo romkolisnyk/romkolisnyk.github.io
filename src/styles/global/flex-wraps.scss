@@ -1,0 +1,9 @@
+._fxw {
+  $values: (wrap);
+
+  @each $value in $values {
+    &--#{$value} {
+      flex-wrap: $value;
+    }
+  }
+}

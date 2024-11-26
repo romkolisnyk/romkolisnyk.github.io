@@ -1,0 +1,22 @@
+.download-button {
+  display: flex;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  align-items: center;
+  gap: 0.4rem;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.2s;
+  box-shadow: -4px 2px 12px 0 #ccc;
+  border-radius: 999px;
+  padding: 0.25rem 0.85rem;
+  color: var(--color-darkgray);
+
+  &:hover {
+    background-color: var(--color-white);
+  }
+
+  &:focus-visible {
+    box-shadow: var(--focus-shadow);
+  }
+}

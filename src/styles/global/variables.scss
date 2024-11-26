@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #2c70d6;
+  --color-white: #fff;
+  --color-lightgray: #f1f1f1;
+  --color-gray: #818181;
+  --color-darkgray: #414141;
+
+  --focus-shadow: 0 0 0 1px var(--color-white), 0 0 0 3px var(--color-primary);
+
+  --font-size-xxs: 0.75rem; // 12px
+  --font-size-xs: 0.8125rem; // 13px
+  --font-size-s: 0.875rem; // 14px
+  --font-size-m: 0.9375rem; // 15px
+  --font-size-default: 1rem; // 16px (default browser size)
+  --font-size-l: 1.25rem; // 20px
+  --font-size-xl: 1.75rem; // 28px
+}
