@@ -1,0 +1,32 @@
+[data-theme="dark"] {
+  animation: blackout 0.4s ease-in-out forwards;
+
+  .page {
+    box-shadow: -5px 3px 20px 0px #0d0d0f;
+  }
+
+  .card {
+    &__label {
+      box-shadow: -6px 2px 10px 0 #11100e;
+    }
+
+    &--theme--primary {
+      background: linear-gradient(75deg, #111 50%, #17140c);
+    }
+
+    &--theme--secondary {
+      box-shadow: -2px 2px 0px 0px #66450e;
+      background: linear-gradient(90deg, #181209, #111);
+    }
+  }
+
+  .download-button {
+    box-shadow: -4px 2px 12px 0 #090908;
+  }
+
+  .switcher {
+    &__slider {
+      box-shadow: -2px 0px 20px 0px #070707;
+    }
+  }
+}

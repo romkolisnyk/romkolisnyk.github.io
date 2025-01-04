@@ -6,16 +6,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && node generate-pdf.js",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "prettier": "^3.4.1",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
     "prettier-plugin-css-order": "^2.1.2",
-    "puppeteer": "^23.9.0",
-    "sass-embedded": "^1.81.0",
+    "puppeteer": "^23.11.1",
+    "sass-embedded": "^1.83.0",
     "serve": "^14.2.4",
-    "vite": "^5.4.11",
+    "vite": "^6.0.5",
     "vite-plugin-html": "^3.2.2",
-    "vite-svg-sprite-wrapper": "^1.3.3"
+    "vite-svg-sprite-wrapper": "^1.4.1"
   }
 }

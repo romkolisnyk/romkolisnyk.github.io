@@ -10,22 +10,30 @@ body {
 body {
   position: relative;
   background-color: var(--color-lightgray);
+  padding: 3rem;
   min-width: 320px;
   overflow-x: hidden;
   color: var(--color-darkgray);
   line-height: 1.65;
   font-family: "JetBrains Mono", monospace;
-  padding: 3rem;
+  //transition: background-color 0.3s;
 }
 
 a {
-  transition: color 0.2s;
+  transition: color 0.3s;
   color: currentColor;
   text-decoration: none;
 
   &:hover {
     color: var(--color-primary);
   }
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: inherit;
 }
 
 ul {

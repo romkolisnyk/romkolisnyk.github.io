@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <title>Roman Kolisnyk / Frontend developer</title>
@@ -25,7 +25,7 @@
   <body>
     <main class="page">
       <section class="page__head">
-        <div class="summary _gap--0_75">
+        <header class="summary _gap--0_75">
           <img
             class="summary__img"
             src="assets/me.jpg"
@@ -40,6 +40,7 @@
                   class="link"
                   target="_blank"
                   rel="noopener"
+                  aria-label="Location: Ukraine, Kyiv"
                 >
                   <svg class="icon" aria-hidden="true">
                     <use href="assets/sprite.svg#location"></use>
@@ -53,6 +54,7 @@
                   class="link"
                   target="_blank"
                   rel="noopener"
+                  aria-label="Email: romkolisnyk@gmail.com"
                 >
                   <svg class="icon" aria-hidden="true">
                     <use href="assets/sprite.svg#envelope"></use>
@@ -66,6 +68,7 @@
                   class="link"
                   target="_blank"
                   rel="noopener"
+                  aria-label="Github username: romkolisnyk"
                 >
                   <svg class="icon" aria-hidden="true">
                     <use href="assets/sprite.svg#github"></use>
@@ -79,6 +82,7 @@
                   class="link"
                   target="_blank"
                   rel="noopener"
+                  aria-label="Telegram username: Ramapitek"
                 >
                   <svg class="icon" aria-hidden="true">
                     <use href="assets/sprite.svg#telegram"></use>
@@ -92,6 +96,7 @@
                   class="link"
                   target="_blank"
                   rel="noopener"
+                  aria-label="Linkedin username: roman-kolisnyk"
                 >
                   <svg class="icon" aria-hidden="true">
                     <use href="assets/sprite.svg#linkedin"></use>
@@ -105,6 +110,7 @@
                   class="link"
                   target="_blank"
                   rel="noopener"
+                  aria-label="Instagram username: rockman_kolisnyk"
                 >
                   <svg class="icon" aria-hidden="true">
                     <use href="assets/sprite.svg#instagram"></use>
@@ -118,13 +124,13 @@
               minimalism, perfectionism, sense of humor and kindness.
             </h2>
           </div>
-        </div>
+        </header>
       </section>
 
       <section class="page__body _gap--1_25">
         <ul class="list _gap--0_75">
           <li class="list__item">
-            <div class="card card--theme--secondary">
+            <div class="card card--theme--primary">
               <p class="card__label">🧑‍💻 Experience</p>
               <p class="card__title">
                 <b>airSlate</b>&nbsp;/ Frontend developer & UI tech leader
@@ -165,7 +171,7 @@
             </div>
           </li>
           <li class="list__item">
-            <div class="card card--theme--secondary">
+            <div class="card card--theme--primary">
               <p class="card__title">
                 <b>hexa</b>&nbsp;/ UI Frontend developer
               </p>
@@ -194,7 +200,7 @@
             </div>
           </li>
           <li class="list__item">
-            <div class="card card--theme--secondary">
+            <div class="card card--theme--primary">
               <p class="card__title">
                 <b>freelance</b>&nbsp;/ Frontend developer & designer
               </p>
@@ -228,7 +234,7 @@
 
         <ul class="list _gap--2_5">
           <li class="list__item">
-            <div class="card">
+            <div class="card card--theme--secondary">
               <p class="card__label">🤹 Skills</p>
               <ul class="list _gap--0_75">
                 <li class="list__item"><b>langs:</b> UA (native), EN (B2)</li>
@@ -252,14 +258,14 @@
             </div>
           </li>
           <li class="list__item">
-            <div class="card">
+            <div class="card card--theme--secondary">
               <p class="card__label">🎓 Education</p>
               <p><b>NTUU "Kyiv Polytechnic Institute"</b></p>
               <p>Automation of electromechanical systems and electric drive</p>
             </div>
           </li>
           <li class="list__item">
-            <div class="card">
+            <div class="card card--theme--secondary">
               <p class="card__label">😻 Interests</p>
               <ul class="list _gap--0_5">
                 <li class="list__item">
@@ -279,12 +285,31 @@
       class="download-button"
       href="assets/Roman_Kolisnyk_FE_resume.pdf"
       aria-label="Download resume"
+      download
     >
       <svg class="icon" aria-hidden="true">
         <use href="assets/sprite.svg#download-doc"></use>
       </svg>
       <span>Download PDF</span>
     </a>
+
+    <label class="switcher" aria-label="Toggle dark mode">
+      <input
+        class="switcher__checkbox"
+        type="checkbox"
+        role="switch"
+        aria-checked="false"
+        aria-label="Toggle dark mode"
+      />
+      <span class="switcher__slider" title="Toggle dark mode">
+        <svg class="switcher__icon icon" aria-hidden="true">
+          <use href="assets/sprite.svg#moon"></use>
+        </svg>
+        <svg class="switcher__icon icon" aria-hidden="true">
+          <use href="assets/sprite.svg#sun"></use>
+        </svg>
+      </span>
+    </label>
 
     <script defer type="module" src="/src/main.js"></script>
   </body>

@@ -14,4 +14,11 @@
   --font-size-default: 1rem; // 16px (default browser size)
   --font-size-l: 1.25rem; // 20px
   --font-size-xl: 1.75rem; // 28px
+
+  &[data-theme="dark"] {
+    --color-white: #161616;
+    --color-lightgray: #111;
+    --color-gray: #818181;
+    --color-darkgray: #c2c2c2;
+  }
 }

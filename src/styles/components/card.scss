@@ -1,9 +1,7 @@
 .card {
   position: relative;
   break-inside: avoid;
-  box-shadow: -2px 2px 0px 0px #f8b845;
   border-radius: 8px;
-  background: linear-gradient(90deg, #f9e7d0, #fff9eb);
   padding: 1rem;
 
   &__label {
@@ -21,18 +19,16 @@
   }
 
   .card__title {
+    color: var(--color-primary);
     font-size: var(--font-size-default);
   }
 
   &--theme--primary {
+    background: linear-gradient(75deg, #f1f1f1 50%, #f8f3e6);
   }
 
   &--theme--secondary {
-    box-shadow: none;
-    background: linear-gradient(75deg, #f1f1f1 50%, #f8f3e6);
-
-    .card__title {
-      color: var(--color-primary);
-    }
+    box-shadow: -2px 2px 0px 0px #f8b845;
+    background: linear-gradient(90deg, #f9e7d0, #fff9eb);
   }
 }

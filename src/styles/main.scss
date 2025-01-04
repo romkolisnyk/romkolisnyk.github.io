@@ -7,12 +7,14 @@
 @use "components/list";
 @use "components/page";
 @use "components/summary";
+@use "components/switcher";
 @use "components/timeline";
 
 @use "global/animations";
 @use "global/flex-directions";
 @use "global/flex-wraps";
 @use "global/gaps";
+@use "global/theme";
 @use "global/variables";
 
 @use "media";
