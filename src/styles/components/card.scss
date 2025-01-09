@@ -13,14 +13,31 @@
     border-radius: 4px;
     background: rgba(249, 237, 208, 0.09);
     padding: 0 8px;
-    color: var(--color-darkgray);
+    color: var(--text-primary);
     font-weight: 500;
     font-size: var(--font-size-s);
   }
 
-  .card__title {
+  &__title {
     color: var(--color-primary);
     font-size: var(--font-size-default);
+  }
+
+  &__description {
+    margin: 0.5rem 0;
+    box-shadow: inset 0 0 0 1px rgba(221, 221, 221, 70%);
+    border-radius: inherit;
+    background-color: rgba(255, 255, 255, 40%);
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-xs);
+  }
+
+  &__footer {
+    margin-top: 0.5rem;
+    border-top: 1px dashed rgba(221, 221, 221, 70%);
+    padding-top: 0.5rem;
+    color: var(--text-secondary);
+    font-size: var(--font-size-xxs);
   }
 
   &--theme--primary {
@@ -30,5 +47,20 @@
   &--theme--secondary {
     box-shadow: -2px 2px 0px 0px #f8b845;
     background: linear-gradient(90deg, #f9e7d0, #fff9eb);
+  }
+
+  [data-theme="dark"] & {
+    &__label {
+      box-shadow: -6px 2px 10px 0 #11100e;
+    }
+
+    &--theme--primary {
+      background: linear-gradient(75deg, #111 50%, #17140c);
+    }
+
+    &--theme--secondary {
+      box-shadow: -2px 2px 0px 0px #66450e;
+      background: linear-gradient(90deg, #181209, #111);
+    }
   }
 }

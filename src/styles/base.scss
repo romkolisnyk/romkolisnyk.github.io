@@ -9,14 +9,13 @@ body {
 
 body {
   position: relative;
-  background-color: var(--color-lightgray);
+  background-color: var(--surface-secondary);
   padding: 3rem;
   min-width: 320px;
   overflow-x: hidden;
-  color: var(--color-darkgray);
+  color: var(--text-primary);
   line-height: 1.65;
   font-family: "JetBrains Mono", monospace;
-  //transition: background-color 0.3s;
 }
 
 a {
@@ -25,7 +24,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: var(--color-primary);
+    color: var(--text-link);
   }
 }
 

@@ -1,7 +1,7 @@
 .list {
   display: flex;
   flex-direction: column;
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
 
   &--type--dotted {
     .list__item {

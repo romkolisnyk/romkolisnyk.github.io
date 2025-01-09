@@ -7,17 +7,3 @@
     opacity: 1;
   }
 }
-
-@keyframes blackout {
-  0% {
-    filter: brightness(1);
-  }
-
-  50% {
-    filter: brightness(0);
-  }
-
-  100% {
-    filter: brightness(1);
-  }
-}

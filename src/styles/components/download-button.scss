@@ -10,7 +10,7 @@
   box-shadow: -4px 2px 12px 0 #ccc;
   border-radius: 999px;
   padding: 0.25rem 0.85rem;
-  color: var(--color-darkgray);
+  color: var(--text-primary);
   line-height: 1.5rem;
 
   &:hover {
@@ -19,5 +19,9 @@
 
   &:focus-visible {
     box-shadow: var(--focus-shadow);
+  }
+
+  [data-theme="dark"] & {
+    box-shadow: -4px 2px 12px 0 #090908;
   }
 }
