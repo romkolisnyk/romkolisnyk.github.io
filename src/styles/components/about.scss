@@ -1,0 +1,38 @@
+.about {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "img info"
+    "img contacts";
+  align-items: stretch;
+
+  &__img {
+    grid-area: img;
+    max-width: 13rem;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    grid-area: info;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.375rem;
+  }
+
+  &__tags {
+    font-size: var(--font-size-xs);
+  }
+
+  &__contacts {
+    grid-area: contacts;
+    background-color: #e4e4e4;
+    padding: 0.5rem 1.375rem;
+  }
+
+  [data-theme="dark"] & {
+    &__contacts {
+      background-color: #1e1e1e;
+    }
+  }
+}

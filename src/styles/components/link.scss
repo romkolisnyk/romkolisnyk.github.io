@@ -6,7 +6,7 @@
   line-height: 1.25rem;
 
   &:focus-visible {
-    box-shadow: var(--focus-shadow);
+    box-shadow: var(--action-focus);
     border-radius: 4px;
   }
 }

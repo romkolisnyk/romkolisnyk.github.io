@@ -1,3 +1,4 @@
+// BASE
 * {
   box-sizing: border-box;
 }
@@ -14,12 +15,13 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   color: var(--text-primary);
-  line-height: 1.65;
+  line-height: 1.7;
   font-family: "JetBrains Mono", monospace;
 }
 
+// INTERACTIVE ELEMENTS
 a {
-  transition: color 0.3s;
+  transition: color 0.2s;
   color: currentColor;
   text-decoration: none;
 
@@ -35,12 +37,14 @@ button {
   font-family: inherit;
 }
 
+// LISTS
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+// TYPOGRAPHY
 h1,
 h2,
 h3,
@@ -53,6 +57,7 @@ p {
 
 h1 {
   font-size: var(--font-size-xl);
+  line-height: 1.2;
 }
 
 h2 {
@@ -60,13 +65,12 @@ h2 {
   font-size: var(--font-size-m);
 }
 
+// BEHAVIORS
 ::selection {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: #2c70d6;
+  color: #fff;
 }
 
 :focus-visible {
-  box-shadow:
-    0 0 0 1px var(--color-white),
-    0 0 0 3px var(--color-primary);
+  box-shadow: var(--action-focus);
 }

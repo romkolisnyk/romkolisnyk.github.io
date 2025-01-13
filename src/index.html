@@ -2,11 +2,11 @@
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <title>Roman Kolisnyk / Frontend developer</title>
-    <meta name="description" content="Roman Kolisnyk / Frontend developer" />
+    <title>Roman Kolisnyk / Frontend Developer</title>
+    <meta name="description" content="Roman Kolisnyk / Frontend Developer" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
     />
 
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
@@ -25,15 +25,30 @@
   <body>
     <main class="page">
       <section class="page__head">
-        <header class="summary _gap--0_75">
+        <header class="about">
           <img
-            class="summary__img"
+            class="about__img"
             src="assets/me.jpg"
             alt="Portrait of Roman Kolisnyk"
           />
-          <div class="summary__info _gap--0_75">
-            <h1>Roman Kolisnyk / Frontend developer</h1>
-            <ul class="list _fxd--row _fxw--wrap _gap--0_75">
+          <div class="about__info">
+            <h1>Roman Kolisnyk / Frontend Developer</h1>
+            <h2>
+              Just a good guy, skilled in HTML, CSS, JS/TS, visualism,
+              minimalism, perfectionism, a sense of humor and kindness.
+            </h2>
+            <div class="about__tags">
+              <ul class="list list--type--hash list--behavior--inline">
+                <li class="list__item">experience with complex SaaS products</li>
+                <li class="list__item">creating scalable, fast, accessible, semantic, animated UI</li>
+                <li class="list__item">strong attention to details</li>
+                <li class="list__item">experience working in large teams & managing small ones</li>
+                <li class="list__item">proficient with modern FE tools</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about__contacts">
+            <ul class="list _fxd--row _fxw--wrap _gap--1">
               <li class="list__item">
                 <a
                   href="https://goo.gl/maps/BuvjooM9yfk"
@@ -60,6 +75,20 @@
                     <use href="assets/sprite.svg#envelope"></use>
                   </svg>
                   <span>romkolisnyk@gmail.com</span>
+                </a>
+              </li>
+              <li class="list__item">
+                <a
+                  href="https://www.linkedin.com/in/ramapitek/"
+                  class="link"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Linkedin username: ramapitek"
+                >
+                  <svg class="icon" aria-hidden="true">
+                    <use href="assets/sprite.svg#linkedin"></use>
+                  </svg>
+                  <span>ramapitek</span>
                 </a>
               </li>
               <li class="list__item">
@@ -92,20 +121,6 @@
               </li>
               <li class="list__item">
                 <a
-                  href="https://www.linkedin.com/in/roman-kolisnyk/"
-                  class="link"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Linkedin username: roman-kolisnyk"
-                >
-                  <svg class="icon" aria-hidden="true">
-                    <use href="assets/sprite.svg#linkedin"></use>
-                  </svg>
-                  <span>roman-kolisnyk</span>
-                </a>
-              </li>
-              <li class="list__item">
-                <a
                   href="https://www.instagram.com/rockman_kolisnyk/"
                   class="link"
                   target="_blank"
@@ -119,194 +134,228 @@
                 </a>
               </li>
             </ul>
-            <h2>
-              Just a good guy, skilled in HTML, CSS, JS/TS, visualism,
-              minimalism, perfectionism, sense of humor and kindness.
-            </h2>
           </div>
         </header>
       </section>
 
-      <section class="page__body _gap--1_25">
-        <ul class="list _gap--0_75">
+      <section class="page__body">
+        <ul class="list _gap--1">
           <li class="list__item">
-            <div class="card card--theme--primary">
-              <p class="card__label">🧑‍💻 Experience</p>
-              <header class="card__title">
-                <strong>airSlate</strong>&nbsp;/ Frontend Developer & UI Tech
-                Leader
+            <article class="card card--theme--primary">
+              <h3 class="card__label">🧑‍💻 Experience</h3>
+              <header class="card__header">
+                <h4 class="card__title">
+                  <strong>airSlate</strong> / Frontend Developer & UI Tech Leader
+                </h4>
+                <p class="timeline">
+                  Oct 2019<span class="timeline__separator"></span>now
+                </p>
+                <p class="card__description">
+                  SaaS company providing workflow automation, document
+                  management, e-signatures, PDF editing, and no-code solutions
+                  to 100+ million users worldwide
+                </p>
               </header>
-              <p class="timeline">
-                Oct 2019<span class="timeline__separator"></span>now
-              </p>
-              <p class="card__description">
-                SaaS company providing workflow automation, document management,
-                e-signatures, PDF editing, and no-code solutions to 100+ million
-                users worldwide
-              </p>
-              <ul class="list list--type--dotted _gap--0_25">
-                <li class="list__item">
-                  <b>Developed UI & functionality</b> for core products:
-                  <strong>pdfFiller</strong> (editor),
-                  <strong>pdfFillerSDK</strong>,
-                  <strong>signNow</strong> (editor),
-                  <strong>editPDF</strong> (editor & landing page)
-                </li>
-                <li class="list__item">
-                  <b>Refactored legacy Pug components</b> into scalable React +
-                  TS architectures
-                </li>
-                <li class="list__item">
-                  <b>Built and maintained a UI Kit in Storybook</b> from scratch
-                  for consistent and fast development
-                </li>
-                <li class="list__item">
-                  <b>Delivered clean solutions</b> covered by
-                  <b>unit and E2E tests</b>
-                </li>
-                <li class="list__item">
-                  <b>Enhanced performance, accessibility, and semantics</b>
-                  across products
-                </li>
-                <li class="list__item">
-                  Maintained and debugged existing/legacy codebases
-                </li>
-                <li class="list__item">
-                  <b>Automated workflows</b> with CI/CD
-                </li>
-                <li class="list__item">
-                  <b>Led technical initiatives</b>, conducted code reviews &
-                  interviews, shared knowledge through mentorship,
-                  presentations, documentation
-                </li>
-              </ul>
+              <div class="card__body">
+                <ul class="list list--type--dot _gap--0_375">
+                  <li class="list__item">
+                    <b>Developed UI & functionality</b> for products:
+                    <a
+                      href="https://www.pdffiller.com/"
+                      target="_blank"
+                      rel="noopener norefferer"
+                    >
+                      <strong>pdfFiller</strong>
+                    </a>
+                    (editor),
+                    <a
+                      href="https://embed.pdffiller.com/"
+                      target="_blank"
+                      rel="noopener norefferer"
+                    ><strong>pdfFillerSDK</strong></a>,
+                    <a
+                      href="https://www.airslate.com/"
+                      target="_blank"
+                      rel="noopener norefferer"
+                    >
+                      <strong>airSlate</strong>
+                    </a>
+                    (editor),
+                    <a
+                      href="https://www.signnow.com/"
+                      target="_blank"
+                      rel="noopener norefferer"
+                    >
+                      <strong>signNow</strong>
+                    </a>
+                    (editor),
+                    <a
+                      href="https://edit-pdf-online.pdffiller.com/"
+                      target="_blank"
+                      rel="noopener norefferer"
+                    >
+                      <strong>trueEdit</strong>
+                    </a>
+                    (editor & landing page)
+                  </li>
+                  <li class="list__item">
+                    <b>Refactored legacy Pug components</b> into scalable React + TS architectures
+                  </li>
+                  <li class="list__item">
+                    <b>Built and maintained a UI Kit in Storybook</b> from scratch for consistent and fast development
+                  </li>
+                  <li class="list__item">
+                    <b>Delivered clean solutions</b> covered by <b>unit and E2E tests</b>
+                  </li>
+                  <li class="list__item">
+                    <b>Enhanced performance, accessibility, and semantics</b> across products
+                  </li>
+                  <li class="list__item">
+                    Maintained and debugged existing/legacy codebases
+                  </li>
+                  <li class="list__item">
+                    <b>Automated workflows</b> with CI/CD
+                  </li>
+                  <li class="list__item">
+                    <b>Led technical initiatives</b>, conducted code reviews & interviews, shared knowledge
+                    through mentorship, presentations, documentation
+                  </li>
+                </ul>
+              </div>
               <footer class="card__footer">
-                HTML, SASS, React, Redux, Jest, Playwright, Webpack, Vite, Gulp,
-                Git, GHA, JIRA, Grafana, SonarQube, ABtower, TeamCity
+                HTML, Pug, SASS, JS, TS, React, Redux, Thunk, Saga, Storybook,
+                Jest, Playwright, Webpack, Vite, Gulp, Git, GHA, JIRA,
+                SonarQube, Grafana, Kibana, Allure, Figma, etc.
               </footer>
-            </div>
+            </article>
           </li>
           <li class="list__item">
-            <div class="card card--theme--primary">
-              <p class="card__title">
-                <b>hexa</b>&nbsp;/ UI Frontend Developer
-              </p>
-              <p class="timeline">
-                Sep 2018<span class="timeline__separator"></span>Oct 2019
-              </p>
-              <p class="card__description">
-                Service company providing copywriting, programming, marketing,
-                CRM development, content management, and web design solutions
-                for global corporate clients
-              </p>
-              <ul class="list list--type--dotted _gap--0_25">
-                <li class="list__item">
-                  Created a lot of
-                  <b>interactive, user-friendly, animated web pages</b>
-                </li>
-                <li class="list__item">
-                  <b>Built reusable UI components</b> for order forms and user
-                  dashboards with PHP integration
-                </li>
-                <li class="list__item">
-                  Maintained & optimized a lot of legacy code
-                </li>
-                <li class="list__item">
-                  <b
-                    >Significantly enhanced performance, accessibility,
-                    semantics</b
-                  >
-                  of the web pages
-                </li>
-                <li class="list__item">Created responsive emails</li>
-              </ul>
+            <article class="card card--theme--primary">
+              <header class="card__header">
+                <h4 class="card__title">
+                  <b>hexa</b> / UI Frontend Developer
+                </h4>
+                <p class="timeline">
+                  Sep 2018<span class="timeline__separator"></span>Oct 2019
+                </p>
+                <p class="card__description">
+                  Service company providing copywriting, programming, marketing,
+                  CRM development, content management, and web design solutions
+                  for global corporate clients
+                </p>
+              </header>
+              <div class="card__body">
+                <ul class="list list--type--dot _gap--0_375">
+                  <li class="list__item">
+                    Created a lot of <b>interactive, user-friendly, animated web pages</b>
+                  </li>
+                  <li class="list__item">
+                    <b>Built reusable UI components</b> for order forms and user dashboards with PHP integration
+                  </li>
+                  <li class="list__item">
+                    Maintained & optimized a lot of legacy code
+                  </li>
+                  <li class="list__item">
+                    <b>Significantly enhanced performance, accessibility, semantics</b> of the pages
+                  </li>
+                  <li class="list__item">Created responsive emails</li>
+                </ul>
+              </div>
               <footer class="card__footer">
-                HTML, SASS, React, Redux, SASS, Jest, Playwright, Webpack, Vite,
-                Gulp, Git, GHA, JIRA, Grafana, SonarQube, ABtower, TeamCity
+                HTML, SASS, JS, jQuery, Vue.js, PHP, WordPress, Bootstrap, GSAP,
+                Gulp, Git, Avocado, Figma
               </footer>
-            </div>
+            </article>
           </li>
           <li class="list__item">
-            <div class="card card--theme--primary">
-              <p class="card__title">
-                <b>freelance</b>&nbsp;/ Frontend Developer & Designer
-              </p>
-              <p class="timeline">
-                Jan 2018<span class="timeline__separator"></span>Sep 2018
-              </p>
-              <ul class="list list--type--dotted _gap--0_25">
-                <li class="list__item">
-                  Developed e-commerce websites, landing pages, and custom
-                  CMS-based solutions
-                </li>
-                <li class="list__item">
-                  Redesigned, optimized, debugged existing websites
-                </li>
-                <li class="list__item">
-                  Implemented custom functionality tailored to client needs
-                </li>
-                <li class="list__item">
-                  Designed and built responsive pages for various CMS platforms
-                </li>
-                <li class="list__item">
-                  Configured SEO and hosting environments
-                </li>
-              </ul>
+            <article class="card card--theme--primary">
+              <header class="card__header">
+                <h4 class="card__title">
+                  <b>freelance</b> / Frontend Developer & Designer
+                </h4>
+                <p class="timeline">
+                  Jan 2018<span class="timeline__separator"></span>Sep 2018
+                </p>
+              </header>
+              <div class="card__body">
+                <ul class="list list--type--dot _gap--0_375">
+                  <li class="list__item">
+                    Developed <b>e-commerce</b> websites, <b>landing pages</b>, and <b>custom CMS-based solutions</b>
+                  </li>
+                  <li class="list__item">
+                    <b>Redesigned, optimized, debugged</b> existing websites
+                  </li>
+                  <li class="list__item">
+                    <b>Implemented custom functionality</b> tailored to client needs
+                  </li>
+                  <li class="list__item">
+                    <b>Designed and built responsive pages</b> for various CMS platforms
+                  </li>
+                  <li class="list__item">
+                    Configured <b>SEO and hosting</b> environments
+                  </li>
+                </ul>
+              </div>
               <footer class="card__footer">
-                HTML, SASS, React, Redux, SASS, Jest, Playwright, Webpack, Vite,
-                Gulp, Git, GHA, JIRA, Grafana, SonarQube, ABtower, TeamCity
+                HTML, SASS, JS, jQuery, PHP, Yii2, WordPress, OpenCart,
+                Bootstrap, Gulp, Git, Sketch, Avocado, Zeplin
               </footer>
-            </div>
+            </article>
           </li>
         </ul>
 
         <ul class="list _gap--2_5">
           <li class="list__item">
-            <div class="card card--theme--secondary">
-              <p class="card__label">🤹 Skills</p>
-              <ul class="list _gap--0_75">
+            <article class="card card--theme--secondary">
+              <h3 class="card__label">🤹 Skills</h3>
+              <ul class="list _gap--1">
                 <li class="list__item">
-                  <b>langs:</b> UA (native), EN (upper-intermediate)
+                  <b>langs:</b>
+                  UA (native), EN (upper-intermediate)
                 </li>
                 <li class="list__item">
-                  <b>dev langs:</b> HTML, CSS, JavaScript, TypeScript
+                  <b>dev langs:</b>
+                  HTML, CSS, JavaScript, TypeScript
                 </li>
                 <li class="list__item">
-                  <b>libs/tools:</b> React, Redux, RTK, Router, Pug, SASS, Jest,
-                  Playwright
+                  <b>libs/tools:</b>
+                  React, Redux, RTK, Router, Query, Next.js, Pug, SASS, Jest,
+                  Playwright, Testing Library, Motion
                 </li>
                 <li class="list__item">
-                  <b>methodologies/specs:</b> BEM, accessibility (A11Y),
-                  cross-browser &amp; adaptive layout, web animations, valid
-                  &amp; semantic HTML, web performance optimization, unit &
-                  end-to-end testing, CI/CD
+                  <b>methodologies/specs:</b>
+                  BEM, accessibility (A11Y), cross-browser &amp; adaptive
+                  layout, web animations, valid &amp; semantic HTML, web
+                  performance optimization, unit & end-to-end testing, CI/CD
                 </li>
                 <li class="list__item">
-                  <b>etc:</b> Webpack, Vite, Gulp, Git, GitHub Actions (GHA),
-                  JIRA, Storybook, yarn, npm, CLI, Teamcity, TailwindCSS
+                  <b>etc:</b>
+                  Webpack, Vite, Gulp, Git, GitHub Actions (GHA), JIRA,
+                  Storybook, yarn, npm, CLI, Teamcity, TailwindCSS, Figma,
+                  Sketch...
                 </li>
               </ul>
-            </div>
+            </article>
           </li>
           <li class="list__item">
-            <div class="card card--theme--secondary">
-              <p class="card__label">🎓 Education</p>
+            <article class="card card--theme--secondary">
+              <h3 class="card__label">🎓 Education</h3>
               <p><b>NTUU "Kyiv Polytechnic Institute"</b></p>
               <p>Automation of electromechanical systems and electric drive</p>
-            </div>
+            </article>
           </li>
           <li class="list__item">
-            <div class="card card--theme--secondary">
-              <p class="card__label">😻 Interests</p>
+            <article class="card card--theme--secondary">
+              <h3 class="card__label">😻 Interests</h3>
               <ul class="list _gap--0_5">
                 <li class="list__item">
                   🤘 Ultra-heavy metal, songwriting, guitar playing, extreme
                   vocals, mixing & mastering
                 </li>
-                <li class="list__item">👨‍🎨 Design, minimalism, interfaces</li>
+                <li class="list__item">👨‍🎨 Design, minimalism, tech</li>
                 <li class="list__item">🐸 ...otherCommonHobbies</li>
               </ul>
-            </div>
+            </article>
           </li>
         </ul>
       </section>
@@ -329,19 +378,18 @@
         class="switcher__checkbox"
         type="checkbox"
         role="switch"
-        aria-checked="false"
         aria-label="Toggle dark mode"
       />
       <span class="switcher__slider" title="Toggle dark mode">
-        <svg class="switcher__icon icon" aria-hidden="true">
+        <svg class="icon" aria-hidden="true">
           <use href="assets/sprite.svg#moon"></use>
         </svg>
-        <svg class="switcher__icon icon" aria-hidden="true">
+        <svg class="icon" aria-hidden="true">
           <use href="assets/sprite.svg#sun"></use>
         </svg>
       </span>
     </label>
 
-    <script defer type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

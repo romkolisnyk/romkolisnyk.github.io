@@ -1,9 +1,21 @@
 .list {
   display: flex;
   flex-direction: column;
-  font-size: var(--font-size-s);
 
-  &--type--dotted {
+  &--behavior--inline {
+    display: block;
+
+    .list__item {
+      display: inline;
+      padding-right: 0.75rem;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &--type--dot {
     .list__item {
       position: relative;
       padding-left: 1rem;
@@ -16,7 +28,17 @@
         background-color: currentColor;
         width: 0.25rem;
         height: 0.25rem;
-        content: "";
+        content: '';
+      }
+    }
+  }
+
+  &--type--hash {
+    .list__item {
+      &::before {
+        content: '#';
+        color: var(--text-link);
+        font-weight: 700;
       }
     }
   }

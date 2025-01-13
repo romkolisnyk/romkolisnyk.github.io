@@ -4,31 +4,50 @@
   }
 
   .page {
-    margin: 0;
-    padding: 30px;
-
     &__body {
-      flex-direction: column;
+      grid-template-columns: 1fr;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .summary__img {
-    display: none;
+  .about {
+    &__img {
+      display: none;
+    }
+
+    &__info,
+    &__contacts {
+      padding: 1rem;
+    }
   }
 }
 
 @media screen and (max-width: 480px) {
-  .page {
-    padding: 16px;
+  h1 {
+    font-size: var(--font-size-l);
   }
 
-  .summary {
-    align-items: center;
+  .page {
+    padding: 1rem 1rem 5rem;
+  }
+}
+
+@media print {
+  .switcher,
+  .download-button {
+    display: none;
+  }
+
+  .card--theme--primary {
+    background: var(--surface-secondary);
+  }
+
+  .card--theme--secondary {
+    background: #f7eee2;
   }
 }
 
 @page {
-  size: 1290px 1590px;
+  size: 1290px 1610px;
 }
