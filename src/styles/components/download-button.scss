@@ -22,8 +22,8 @@
     box-shadow: var(--action-focus);
   }
 
-  [data-theme="dark"] & {
-    background-color: var(--surface-primary);
+  [data-theme='dark'] & {
+    background-color: var(--surface-secondary-translucent);
 
     &:hover {
       background-color: var(--surface-secondary);

@@ -11,7 +11,7 @@
     height: 0;
 
     &:checked + .switcher__slider {
-      background-color: var(--surface-primary);
+      background-color: var(--surface-secondary-translucent);
     }
 
     &:focus-visible + .switcher__slider {
@@ -54,11 +54,11 @@
       background-color: var(--surface-primary);
       width: 16px;
       height: 16px;
-      content: "";
+      content: '';
     }
   }
 
-  [data-theme="dark"] & {
+  [data-theme='dark'] & {
     &__slider {
       &:hover {
         background-color: var(--surface-secondary);
