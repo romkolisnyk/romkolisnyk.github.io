@@ -1,22 +1,28 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  gap: 1.5rem;
   animation: fadeIn 0.6s ease-in-out forwards;
   margin: 0 auto;
-  box-shadow: -5px 3px 20px 0px #e8e8e8;
+  box-shadow: -6px 4px 20px 0 #e8e8e8;
   border-radius: 8px;
-  background-color: var(--color-white);
-  padding: 3rem;
+  background-color: var(--surface-primary);
+  padding: 2rem;
   max-width: 75rem;
 
   &__head {
     border-radius: inherit;
-    background: var(--color-lightgray);
+    background-color: var(--surface-secondary);
     overflow: hidden;
   }
 
   &__body {
-    display: flex;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 1.25rem;
+  }
+
+  [data-theme="dark"] & {
+    box-shadow: -6px 4px 20px 0 #0d0d0f;
   }
 }

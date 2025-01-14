@@ -3,6 +3,7 @@ import { createHtmlPlugin } from "vite-plugin-html";
 import ViteSvgSpriteWrapper from "vite-svg-sprite-wrapper";
 
 export default defineConfig({
+  base: "./",
   plugins: [
     createHtmlPlugin({
       minify: true,
@@ -10,7 +11,7 @@ export default defineConfig({
     }),
     ViteSvgSpriteWrapper({
       icons: "./src/assets/icons/*.svg",
-      outputDir: "docs/assets",
+      outputDir: "./src/assets",
     }),
   ],
   css: {
@@ -30,6 +31,6 @@ export default defineConfig({
     },
   },
   server: {
-    open: true,
+    open: "/src/",
   },
 });

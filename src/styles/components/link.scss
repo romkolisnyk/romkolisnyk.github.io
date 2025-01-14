@@ -3,10 +3,10 @@
   align-items: center;
   gap: 0.35rem;
   font-size: var(--font-size-xs);
-  line-height: 1.2rem;
+  line-height: 1.25rem;
 
   &:focus-visible {
-    box-shadow: var(--focus-shadow);
+    box-shadow: var(--action-focus);
     border-radius: 4px;
   }
 }

@@ -7,16 +7,26 @@
   gap: 0.4rem;
   backdrop-filter: blur(10px);
   transition: background-color 0.2s;
-  box-shadow: -4px 2px 12px 0 #ccc;
+  box-shadow: var(--elevation-shadow-overlay);
   border-radius: 999px;
+  background-color: var(--surface-primary-translucent);
   padding: 0.25rem 0.85rem;
-  color: var(--color-darkgray);
+  font-size: var(--font-size-m);
 
   &:hover {
-    background-color: var(--color-white);
+    background-color: var(--surface-primary);
+    color: var(--text-primary);
   }
 
   &:focus-visible {
-    box-shadow: var(--focus-shadow);
+    box-shadow: var(--action-focus);
+  }
+
+  [data-theme="dark"] & {
+    background-color: var(--surface-primary);
+
+    &:hover {
+      background-color: var(--surface-secondary);
+    }
   }
 }
