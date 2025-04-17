@@ -13,10 +13,10 @@
     "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "prettier-plugin-css-order": "^2.1.2",
-    "puppeteer": "^24.4.0",
-    "sass-embedded": "^1.85.1",
+    "puppeteer": "^24.6.1",
+    "sass-embedded": "^1.86.3",
     "serve": "^14.2.4",
-    "vite": "^6.2.1",
+    "vite": "^6.3.1",
     "vite-plugin-html": "^3.2.2",
     "vite-svg-sprite-wrapper": "^1.4.1"
   }
