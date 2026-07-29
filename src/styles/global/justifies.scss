@@ -1,0 +1,11 @@
+._jc {
+  $values: (
+    sb: space-between,
+  );
+
+  @each $key, $value in $values {
+    &--#{$key} {
+      justify-content: $value;
+    }
+  }
+}
