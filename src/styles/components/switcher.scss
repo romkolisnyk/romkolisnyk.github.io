@@ -1,7 +1,7 @@
 .switcher {
   position: fixed;
-  top: 24px;
-  right: 24px;
+  top: var(--fixed-offset);
+  right: var(--fixed-offset);
   width: 46px;
   height: 26px;
 
@@ -33,10 +33,10 @@
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(10px);
-    transition: 0.2s;
+    transition: var(--transition-fast);
     cursor: pointer;
     box-shadow: var(--elevation-shadow-overlay);
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     background-color: var(--surface-primary-translucent);
     padding: 0.3rem;
 
@@ -48,8 +48,8 @@
       position: absolute;
       bottom: 4px;
       left: 4px;
-      transition: 0.2s;
-      border: 1px solid #b3b3b3;
+      transition: var(--transition-fast);
+      border: 1px solid var(--switcher-thumb-border);
       border-radius: inherit;
       background-color: var(--surface-primary);
       width: 16px;

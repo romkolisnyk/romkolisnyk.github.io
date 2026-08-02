@@ -4,6 +4,7 @@
   --text-primary: #414141;
   --text-secondary: #666;
   --text-link: #eda31d;
+  --text-inverse: #fff;
 
   --surface-primary: #fff;
   --surface-secondary: #f1f1f1;
@@ -11,8 +12,29 @@
   --surface-secondary-translucent: rgb(241 241 241 / 5%);
 
   --elevation-shadow-overlay: -4px 2px 12px 0 #dfdfdf;
+  --page-shadow: -6px 4px 20px 0 #e8e8e8;
 
-  --action-focus: 0 0 0 1px #fff, 0 0 0 3px #2c70d6;
+  --action-focus: 0 0 0 1px var(--text-inverse), 0 0 0 3px var(--accent);
+  --selection-bg: var(--accent);
+  --selection-color: var(--text-inverse);
+
+  --card-primary-gradient: linear-gradient(75deg, #f1f1f1 50%, #f8f3e6);
+  --card-secondary-gradient: linear-gradient(90deg, #f9e7d0, #fff9eb);
+  --card-secondary-border: #f8b845;
+  --card-secondary-print-bg: #f7eee2;
+  --card-description-bg: var(--surface-primary-translucent);
+  --card-description-ring: rgb(221 221 221 / 70%);
+  --card-footer-border: rgb(189 189 189 / 70%);
+
+  --about-contacts-bg: #e4e4e4;
+
+  --switcher-thumb-border: #b3b3b3;
+
+  --font-family-base: 'JetBrains Mono', monospace;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 
   --font-size-xxxs: 0.6875rem; // 11px
   --font-size-xxs: 0.75rem; // 12px
@@ -23,6 +45,14 @@
   --font-size-l: 1.25rem; // 20px
   --font-size-xl: 1.875rem; // 30px
 
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-pill: 999px;
+
+  --transition-fast: 0.2s;
+
+  --fixed-offset: 24px;
+
   &[data-theme='dark'] {
     --text-primary: #c2c2c2;
     --text-secondary: #959595;
@@ -31,5 +61,13 @@
     --surface-secondary: #111;
 
     --elevation-shadow-overlay: -4px 2px 12px 0 #0e0e0e;
+    --page-shadow: -6px 4px 20px 0 #0d0d0f;
+
+    --card-primary-gradient: linear-gradient(75deg, #111 50%, #17140c);
+    --card-secondary-gradient: linear-gradient(90deg, #181209, #111);
+    --card-secondary-border: #66450e;
+    --card-description-bg: var(--surface-secondary-translucent);
+
+    --about-contacts-bg: #1e1e1e;
   }
 }

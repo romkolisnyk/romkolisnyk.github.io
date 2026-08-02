@@ -16,12 +16,12 @@ body {
   overflow-x: hidden;
   color: var(--text-primary);
   line-height: 1.7;
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-family-base);
 }
 
 // INTERACTIVE ELEMENTS
 a {
-  transition: color 0.2s;
+  transition: color var(--transition-fast);
   color: currentColor;
   text-decoration: none;
 
@@ -61,14 +61,14 @@ h1 {
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   font-size: var(--font-size-m);
 }
 
 // BEHAVIORS
 ::selection {
-  background-color: #2c70d6;
-  color: #fff;
+  background-color: var(--selection-bg);
+  color: var(--selection-color);
 }
 
 :focus-visible {

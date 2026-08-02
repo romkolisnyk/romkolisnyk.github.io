@@ -4,8 +4,8 @@
   gap: 1.5rem;
   animation: fadeIn 0.6s ease-in-out forwards;
   margin: 0 auto;
-  box-shadow: -6px 4px 20px 0 #e8e8e8;
-  border-radius: 8px;
+  box-shadow: var(--page-shadow);
+  border-radius: var(--radius-m);
   background-color: var(--surface-primary);
   padding: 1.5rem;
   max-width: 75rem;
@@ -20,9 +20,5 @@
     display: grid;
     grid-template-columns: 5fr 3fr;
     gap: 1.25rem;
-  }
-
-  [data-theme='dark'] & {
-    box-shadow: -6px 4px 20px 0 #0d0d0f;
   }
 }
