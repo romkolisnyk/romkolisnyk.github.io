@@ -21,7 +21,6 @@
   --card-primary-gradient: linear-gradient(75deg, #eef1ea 50%, #eaf5ee);
   --card-primary-border: rgb(31 122 77 / 18%);
   --card-secondary-gradient: linear-gradient(90deg, #f9e7d0, #fff9eb);
-  --card-secondary-border: var(--text-link);
   --card-secondary-ring: #f8b845;
   --card-secondary-print-bg: #f6efe0;
   --card-description-bg: var(--surface-primary-translucent);
@@ -32,13 +31,11 @@
 
   --switcher-thumb-border: #9fac99;
 
-  --terminal-scanline: rgb(0 0 0 / 3.5%);
   --cursor-color: var(--accent);
 
   --font-family-base: 'JetBrains Mono', monospace;
 
   --font-weight-regular: 400;
-  --font-weight-medium: 500;
   --font-weight-bold: 700;
 
   --font-size-xxxs: 0.6875rem; // 11px
@@ -74,12 +71,9 @@
     --card-primary-gradient: linear-gradient(75deg, #0c130e 50%, #101a12);
     --card-primary-border: rgb(111 251 176 / 22%);
     --card-secondary-gradient: linear-gradient(75deg, #0c130e 50%, #14110c);
-    --card-secondary-border: var(--text-link);
     --card-description-bg: var(--surface-secondary-translucent);
     --card-description-ring: var(--card-primary-border);
 
     --about-contacts-bg: #0f150f;
-
-    --terminal-scanline: rgb(255 255 255 / 4%);
   }
 }

@@ -4,9 +4,7 @@
   }
 
   .page {
-    &__body {
-      grid-template-columns: 1fr;
-    }
+    --page-body-columns: 1fr;
   }
 }
 
@@ -16,14 +14,8 @@
   }
 
   .about {
-    &__img {
-      display: none;
-    }
-
-    &__info,
-    &__contacts {
-      padding: 1rem;
-    }
+    --about-img-display: none;
+    --about-side-padding: 1rem;
   }
 }
 

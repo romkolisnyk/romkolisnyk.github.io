@@ -12,7 +12,7 @@
     position: absolute;
     top: -12px;
     right: 10px;
-    border: 1px solid var(--card-primary-border);
+    border: 1px solid var(--card-label-border-color, var(--card-primary-border));
     border-radius: var(--radius-s);
     background-color: var(--surface-primary);
     padding: 0 0.5rem;
@@ -63,6 +63,7 @@
 
   &--theme--secondary {
     --card-title-color: var(--text-link);
+    --card-label-border-color: var(--card-secondary-ring);
 
     transition: box-shadow var(--transition-fast);
     box-shadow: -1px 0 0 var(--card-secondary-ring);
@@ -71,14 +72,6 @@
 
     &:hover {
       box-shadow: 0 0 0 2px var(--card-secondary-ring);
-    }
-
-    .card__label {
-      border-color: var(--card-secondary-ring);
-
-      &::before {
-        color: var(--card-secondary-border);
-      }
     }
   }
 }

@@ -1,46 +1,57 @@
 .list {
   display: flex;
   flex-direction: column;
+  min-width: 1px;
+
+  &__item {
+    display: var(--list-item-display, block);
+    position: var(--list-item-position, static);
+    padding-right: var(--list-item-padding-right, 0);
+    padding-left: var(--list-item-padding-left, 0);
+
+    &::before {
+      position: var(--list-item-before-position, static);
+      top: var(--list-item-before-top, auto);
+      left: var(--list-item-before-left, auto);
+      border-radius: var(--list-item-before-border-radius, 0);
+      background-color: var(--list-item-before-bg, transparent);
+      width: var(--list-item-before-width, auto);
+      height: var(--list-item-before-height, auto);
+      content: var(--list-item-before-content, none);
+      color: var(--list-item-before-color, inherit);
+      font-weight: var(--list-item-before-font-weight, inherit);
+    }
+
+    &:last-child {
+      padding-right: var(--list-item-last-child-padding-right, var(--list-item-padding-right, 0));
+    }
+  }
 
   &--behavior--inline {
     display: block;
 
-    .list__item {
-      display: inline;
-      padding-right: 0.75rem;
-
-      &:last-child {
-        padding-right: 0;
-      }
-    }
+    --list-item-display: inline;
+    --list-item-padding-right: 0.75rem;
+    --list-item-last-child-padding-right: 0;
   }
 
   &--type--dot {
-    .list__item {
-      position: relative;
-      padding-left: 1rem;
-
-      &::before {
-        position: absolute;
-        top: 0.7em;
-        left: 0;
-        border-radius: 50%;
-        background-color: currentColor;
-        width: 0.25rem;
-        height: 0.25rem;
-        content: '';
-      }
-    }
+    --list-item-position: relative;
+    --list-item-padding-left: 1rem;
+    --list-item-before-position: absolute;
+    --list-item-before-top: 0.7em;
+    --list-item-before-left: 0;
+    --list-item-before-border-radius: 50%;
+    --list-item-before-bg: currentColor;
+    --list-item-before-width: 0.25rem;
+    --list-item-before-height: 0.25rem;
+    --list-item-before-content: '';
   }
 
   &--type--hash {
-    .list__item {
-      &::before {
-        content: '#';
-        color: var(--accent);
-        font-weight: var(--font-weight-bold);
-      }
-    }
+    --list-item-before-content: '#';
+    --list-item-before-color: var(--accent);
+    --list-item-before-font-weight: var(--font-weight-bold);
   }
 
   &--offset--small {

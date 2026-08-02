@@ -9,12 +9,12 @@
   transition: background-color var(--transition-fast);
   box-shadow: var(--elevation-shadow-overlay);
   border-radius: var(--radius-pill);
-  background-color: var(--surface-primary-translucent);
+  background-color: var(--download-button-bg, var(--surface-primary-translucent));
   padding: 0.25rem 0.85rem;
   font-size: var(--font-size-m);
 
   &:hover {
-    background-color: var(--surface-primary);
+    background-color: var(--download-button-hover-bg, var(--surface-primary));
     color: var(--text-primary);
   }
 
@@ -23,10 +23,7 @@
   }
 
   [data-theme='dark'] & {
-    background-color: var(--surface-secondary-translucent);
-
-    &:hover {
-      background-color: var(--surface-secondary);
-    }
+    --download-button-bg: var(--surface-secondary-translucent);
+    --download-button-hover-bg: var(--surface-secondary);
   }
 }

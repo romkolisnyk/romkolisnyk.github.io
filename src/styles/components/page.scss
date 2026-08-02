@@ -18,7 +18,7 @@
 
   &__body {
     display: grid;
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: var(--page-body-columns, 5fr 3fr);
     gap: 1.25rem;
   }
 }
