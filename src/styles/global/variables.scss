@@ -3,7 +3,7 @@
 
   --text-primary: #414141;
   --text-secondary: #666;
-  --text-link: #2c70d6;
+  --text-link: #eda31d;
 
   --surface-primary: #fff;
   --surface-secondary: #f1f1f1;
@@ -23,7 +23,7 @@
   --font-size-l: 1.25rem; // 20px
   --font-size-xl: 1.875rem; // 30px
 
-  &[data-theme="dark"] {
+  &[data-theme='dark'] {
     --text-primary: #c2c2c2;
     --text-secondary: #959595;
 

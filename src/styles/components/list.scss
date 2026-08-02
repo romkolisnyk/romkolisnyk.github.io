@@ -37,7 +37,7 @@
     .list__item {
       &::before {
         content: '#';
-        color: var(--text-link);
+        color: var(--accent);
         font-weight: 700;
       }
     }
