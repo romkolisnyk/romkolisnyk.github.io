@@ -11,6 +11,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  :root {
+    --fixed-offset: 8px;
+  }
+
   .about {
     &__img {
       display: none;

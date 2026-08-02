@@ -12,6 +12,13 @@
 
   &__head {
     border-radius: inherit;
+    background-image: repeating-linear-gradient(
+      180deg,
+      var(--terminal-scanline) 0,
+      var(--terminal-scanline) 1px,
+      transparent 1px,
+      transparent 3px
+    );
     background-color: var(--surface-secondary);
     overflow: hidden;
   }

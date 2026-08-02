@@ -1,34 +1,39 @@
 :root {
-  --accent: #2c70d6;
+  --accent: #1f7a4d;
 
-  --text-primary: #414141;
-  --text-secondary: #666;
-  --text-link: #eda31d;
+  --text-primary: #2a2c28;
+  --text-secondary: #5c6358;
+  --text-link: #b45309;
   --text-inverse: #fff;
 
-  --surface-primary: #fff;
-  --surface-secondary: #f1f1f1;
-  --surface-primary-translucent: rgb(255 255 255 / 40%);
-  --surface-secondary-translucent: rgb(241 241 241 / 5%);
+  --surface-primary: #fbfbf6;
+  --surface-secondary: #eef1ea;
+  --surface-primary-translucent: rgb(251 251 246 / 40%);
+  --surface-secondary-translucent: rgb(238 241 234 / 5%);
 
-  --elevation-shadow-overlay: -4px 2px 12px 0 #dfdfdf;
-  --page-shadow: -6px 4px 20px 0 #e8e8e8;
+  --elevation-shadow-overlay: -4px 2px 12px 0 #dbe0d5;
+  --page-shadow: -6px 4px 20px 0 #e3e8dd;
 
   --action-focus: 0 0 0 1px var(--text-inverse), 0 0 0 3px var(--accent);
-  --selection-bg: var(--accent);
+  --selection-bg: #1f7a4d;
   --selection-color: var(--text-inverse);
 
-  --card-primary-gradient: linear-gradient(75deg, #f1f1f1 50%, #f8f3e6);
+  --card-primary-gradient: linear-gradient(75deg, #eef1ea 50%, #eaf5ee);
+  --card-primary-border: rgb(31 122 77 / 18%);
   --card-secondary-gradient: linear-gradient(90deg, #f9e7d0, #fff9eb);
-  --card-secondary-border: #f8b845;
-  --card-secondary-print-bg: #f7eee2;
+  --card-secondary-border: var(--text-link);
+  --card-secondary-ring: #f8b845;
+  --card-secondary-print-bg: #f6efe0;
   --card-description-bg: var(--surface-primary-translucent);
-  --card-description-ring: rgb(221 221 221 / 70%);
-  --card-footer-border: rgb(189 189 189 / 70%);
+  --card-description-ring: rgb(206 213 200 / 70%);
+  --card-footer-border: rgb(176 184 168 / 70%);
 
-  --about-contacts-bg: #e4e4e4;
+  --about-contacts-bg: #e2e9de;
 
-  --switcher-thumb-border: #b3b3b3;
+  --switcher-thumb-border: #9fac99;
+
+  --terminal-scanline: rgb(0 0 0 / 3.5%);
+  --cursor-color: var(--accent);
 
   --font-family-base: 'JetBrains Mono', monospace;
 
@@ -54,20 +59,27 @@
   --fixed-offset: 24px;
 
   &[data-theme='dark'] {
-    --text-primary: #c2c2c2;
-    --text-secondary: #959595;
+    --accent: #6ffbb0;
 
-    --surface-primary: #161616;
-    --surface-secondary: #111;
+    --text-primary: #cddfd0;
+    --text-secondary: #7ea88a;
+    --text-link: #fbbf24;
 
-    --elevation-shadow-overlay: -4px 2px 12px 0 #0e0e0e;
-    --page-shadow: -6px 4px 20px 0 #0d0d0f;
+    --surface-primary: #0d120d;
+    --surface-secondary: #070907;
 
-    --card-primary-gradient: linear-gradient(75deg, #111 50%, #17140c);
-    --card-secondary-gradient: linear-gradient(90deg, #181209, #111);
-    --card-secondary-border: #66450e;
+    --elevation-shadow-overlay: -4px 2px 12px 0 #030503;
+    --page-shadow: -6px 4px 20px 0 #020302;
+
+    --card-primary-gradient: linear-gradient(75deg, #0c130e 50%, #101a12);
+    --card-primary-border: rgb(111 251 176 / 22%);
+    --card-secondary-gradient: linear-gradient(75deg, #0c130e 50%, #14110c);
+    --card-secondary-border: var(--text-link);
     --card-description-bg: var(--surface-secondary-translucent);
+    --card-description-ring: var(--card-primary-border);
 
-    --about-contacts-bg: #1e1e1e;
+    --about-contacts-bg: #0f150f;
+
+    --terminal-scanline: rgb(255 255 255 / 4%);
   }
 }
