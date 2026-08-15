@@ -10,14 +10,10 @@ const currentTheme = window.localStorage.getItem('theme');
 const LIGHT_THEME = 'light';
 const DARK_THEME = 'dark';
 
-const THEME_COLORS = {
-  [LIGHT_THEME]: '#fbfbf6',
-  [DARK_THEME]: '#070907',
-};
-
 const setTheme = (theme) => {
   htmlNode.setAttribute('data-theme', theme);
-  themeColorMeta.setAttribute('content', THEME_COLORS[theme]);
+  const canvasColor = getComputedStyle(htmlNode).getPropertyValue('--surface-canvas').trim();
+  themeColorMeta.setAttribute('content', canvasColor);
 };
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build && node generate-pdf.js",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prettier": "prettier --write ."
   },
   "devDependencies": {
     "@spiriit/vite-plugin-svg-spritemap": "^7.1.1",

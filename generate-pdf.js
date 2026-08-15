@@ -10,10 +10,7 @@ const startServer = async () => {
 };
 
 const generatePDF = async () => {
-  const pdfOutputPath = path.resolve(
-    './',
-    'docs/assets/Roman_Kolisnyk_FE_resume.pdf',
-  );
+  const pdfOutputPath = path.resolve('./', 'docs/assets/Roman_Kolisnyk_FE_resume.pdf');
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
