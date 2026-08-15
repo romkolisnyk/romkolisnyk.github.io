@@ -36,7 +36,7 @@ h1 {
   font-size: var(--text-xl);
   line-height: var(--leading-tight);
 
-  @include until(sm) {
+  @include until(md) {
     font-size: var(--text-l);
   }
 }
