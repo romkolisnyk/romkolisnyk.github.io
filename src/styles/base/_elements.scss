@@ -13,10 +13,6 @@ body {
   @include until(lg) {
     --body-padding: 0;
   }
-
-  @media print {
-    --body-padding: 0;
-  }
 }
 
 a {
@@ -60,5 +56,5 @@ h2 {
 }
 
 @page {
-  size: 1300px 1625px;
+  size: 1300px 1770px;
 }

@@ -9,20 +9,27 @@ const startServer = async () => {
   return server;
 };
 
+const PAGE_WIDTH = 1300;
+
 const generatePDF = async () => {
   const pdfOutputPath = path.resolve('./', 'docs/assets/Roman_Kolisnyk_FE_resume.pdf');
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
+  await page.setViewport({ width: PAGE_WIDTH, height: 800 });
+  await page.emulateMediaType('print');
+
   const htmlUrl = `http://localhost:3000`;
   await page.goto(htmlUrl, { waitUntil: 'networkidle0' });
 
+  const contentHeight = await page.evaluate(() => document.documentElement.scrollHeight);
+
   await page.pdf({
     path: pdfOutputPath,
-    format: 'A4',
+    width: `${PAGE_WIDTH}px`,
+    height: `${contentHeight}px`,
     printBackground: true,
-    preferCSSPageSize: true,
   });
 
   await browser.close();
