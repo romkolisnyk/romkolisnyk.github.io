@@ -3,7 +3,7 @@
 body {
   position: relative;
   background-color: var(--surface-canvas);
-  padding: var(--space-xl);
+  padding: var(--body-padding, var(--space-xl));
   min-width: 320px;
   overflow-x: hidden;
   color: var(--text-primary);
@@ -11,7 +11,11 @@ body {
   font-family: var(--font-family-base);
 
   @include until(lg) {
-    padding: 0;
+    --body-padding: 0;
+  }
+
+  @media print {
+    --body-padding: 0;
   }
 }
 
