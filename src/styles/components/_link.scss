@@ -1,12 +1,11 @@
 .link {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
-  font-size: var(--font-size-xs);
-  line-height: 1.25rem;
+  gap: var(--space-2xs);
+  font-size: var(--text-xs);
 
   &:focus-visible {
-    box-shadow: var(--action-focus);
+    box-shadow: var(--focus-ring);
     border-radius: var(--radius-s);
   }
 }

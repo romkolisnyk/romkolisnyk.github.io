@@ -1,0 +1,41 @@
+@use '../abstracts/media' as *;
+
+:root {
+  // Spacing
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.375rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2rem;
+
+  --space-fixed: 1.5rem;
+
+  // Type
+  --font-family-base: 'JetBrains Mono', monospace;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --text-2xs: 0.6875rem; // 11px
+  --text-xs: 0.8125rem; // 13px
+  --text-s: 0.875rem; // 14px
+  --text-m: 1rem; // 16px
+  --text-l: 1.25rem; // 20px
+  --text-xl: 1.875rem; // 30px
+
+  --leading-tight: 1.2;
+  --leading-snug: 1.5;
+  --leading-body: 1.7;
+
+  // Shape
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-pill: 999px;
+
+  --duration-fast: 0.2s;
+
+  @include until(md) {
+    --space-fixed: 0.5rem;
+  }
+}

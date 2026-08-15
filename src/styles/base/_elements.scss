@@ -1,0 +1,60 @@
+@use '../abstracts/media' as *;
+
+body {
+  position: relative;
+  background-color: var(--surface-canvas);
+  padding: var(--space-xl);
+  min-width: 320px;
+  overflow-x: hidden;
+  color: var(--text-primary);
+  line-height: var(--leading-body);
+  font-family: var(--font-family-base);
+
+  @include until(lg) {
+    padding: 0;
+  }
+}
+
+a {
+  transition: color var(--duration-fast);
+  color: currentColor;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+h1 {
+  font-size: var(--text-xl);
+  line-height: var(--leading-tight);
+
+  @include until(sm) {
+    font-size: var(--text-l);
+  }
+}
+
+h2 {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-m);
+}
+
+::selection {
+  background-color: var(--accent);
+  color: var(--text-inverse);
+}
+
+:focus-visible {
+  box-shadow: var(--focus-ring);
+}
+
+@page {
+  size: 1300px 1625px;
+}

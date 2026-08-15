@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
   color: var(--text-secondary);
-  font-size: var(--font-size-xxxs);
+  font-size: var(--text-2xs);
 
   &__separator {
     flex-grow: 1;
-    margin: 0 0.8rem -1px;
+    margin: 0 var(--space-s) -1px;
     border-top: 1px dashed currentColor;
   }
 }

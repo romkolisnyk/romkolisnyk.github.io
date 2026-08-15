@@ -1,0 +1,61 @@
+:root {
+  // --- Base ---
+  --accent: #1f7a4d;
+  --highlight: #b45309;
+
+  --text-primary: #2a2c28;
+  --text-secondary: #5c6358;
+  --text-inverse: #fff;
+
+  --surface-canvas: #eef1ea;
+  --surface-panel: #fbfbf6;
+
+  --shadow-overlay: -4px 2px 12px 0 #dbe0d5;
+  --shadow-page: -6px 4px 20px 0 #e3e8dd;
+
+  // --- Borders & rings ---
+  --border-accent: rgb(31 122 77 / 18%);
+  --border-highlight: #f8b845;
+  --border-footer: rgb(176 184 168 / 70%);
+  --ring-muted: rgb(206 213 200 / 70%);
+
+  // --- Translucent surfaces ---
+  --surface-panel-alpha: rgb(251 251 246 / 40%);
+  --surface-hover: var(--surface-panel);
+
+  // --- Hand-tuned card gradients ---
+  --card-primary-bg-image: linear-gradient(75deg, #eef1ea 50%, #eaf5ee);
+  --card-secondary-bg-image: linear-gradient(90deg, #f9e7d0, #fff9eb);
+  --card-secondary-print-bg: #f6efe0;
+
+  --focus-ring: 0 0 0 1px var(--text-inverse), 0 0 0 3px var(--accent);
+
+  // --- Component-local ---
+  --about-contacts-bg: #e2e9de;
+  --switcher-thumb-border: #9fac99;
+
+  &[data-theme='dark'] {
+    --accent: #6ffbb0;
+    --highlight: #fbbf24;
+
+    --text-primary: #cddfd0;
+    --text-secondary: #7ea88a;
+
+    --surface-canvas: #070907;
+    --surface-panel: #0d120d;
+
+    --shadow-overlay: -4px 2px 12px 0 #030503;
+    --shadow-page: -6px 4px 20px 0 #020302;
+
+    --border-accent: rgb(111 251 176 / 22%);
+    --ring-muted: var(--border-accent);
+
+    --surface-panel-alpha: rgb(238 241 234 / 5%);
+    --surface-hover: var(--surface-canvas);
+
+    --card-primary-bg-image: linear-gradient(75deg, #0c130e 50%, #101a12);
+    --card-secondary-bg-image: linear-gradient(75deg, #0c130e 50%, #14110c);
+
+    --about-contacts-bg: #0f150f;
+  }
+}

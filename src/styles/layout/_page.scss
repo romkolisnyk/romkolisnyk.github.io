@@ -1,0 +1,34 @@
+@use '../abstracts/media' as *;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+  animation: fadeIn 0.6s ease-in-out forwards;
+  margin: 0 auto;
+  box-shadow: var(--shadow-page);
+  border-radius: var(--radius-m);
+  background-color: var(--surface-panel);
+  padding: var(--space-l);
+  max-width: 75rem;
+
+  @include until(sm) {
+    padding: var(--space-m) var(--space-m) 5rem;
+  }
+
+  &__head {
+    border-radius: inherit;
+    background-color: var(--surface-canvas);
+    overflow: hidden;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: var(--space-l);
+
+    @include until(lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

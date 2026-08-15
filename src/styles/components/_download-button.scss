@@ -1,0 +1,26 @@
+@use '../abstracts/floating-control' as *;
+
+.download-button {
+  @include floating-control-pill;
+
+  display: flex;
+  position: fixed;
+  right: var(--space-fixed);
+  bottom: var(--space-fixed);
+  align-items: center;
+  gap: var(--space-2xs);
+  padding: var(--space-3xs) var(--space-s);
+  font-size: var(--text-m);
+
+  &:hover {
+    color: var(--text-primary);
+  }
+
+  &:focus-visible {
+    box-shadow: var(--focus-ring);
+  }
+
+  @media print {
+    display: none;
+  }
+}

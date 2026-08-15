@@ -1,20 +1,19 @@
-@use 'base';
+@use 'tokens/scale';
+@use 'tokens/theme';
 
+@use 'base/reset';
+@use 'base/elements';
+@use 'base/animations';
+
+@use 'layout/page';
+@use 'layout/cluster';
+@use 'layout/gap';
+
+@use 'components/about';
 @use 'components/card';
 @use 'components/download-button';
 @use 'components/icon';
 @use 'components/link';
 @use 'components/list';
-@use 'components/page';
-@use 'components/about';
 @use 'components/switcher';
 @use 'components/timeline';
-
-@use 'global/animations';
-@use 'global/flex-directions';
-@use 'global/flex-wraps';
-@use 'global/gaps';
-@use 'global/justifies';
-@use 'global/variables';
-
-@use 'media';

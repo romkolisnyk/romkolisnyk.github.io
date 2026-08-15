@@ -1,0 +1,11 @@
+@mixin floating-control-pill {
+  backdrop-filter: blur(10px);
+  transition: background-color var(--duration-fast);
+  box-shadow: var(--shadow-overlay);
+  border-radius: var(--radius-pill);
+  background-color: var(--surface-panel-alpha);
+
+  &:hover {
+    background-color: var(--surface-hover);
+  }
+}

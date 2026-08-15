@@ -1,0 +1,56 @@
+@use '../abstracts/floating-control' as *;
+
+.switcher {
+  display: flex;
+  position: fixed;
+  top: var(--space-fixed);
+  right: var(--space-fixed);
+  width: 46px;
+  height: 26px;
+
+  @media print {
+    display: none;
+  }
+
+  &__checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:focus-visible + .switcher__slider {
+      box-shadow: var(--focus-ring);
+    }
+
+    &:checked + .switcher__slider::before {
+      transform: translateX(20px);
+    }
+  }
+
+  &__slider {
+    @include floating-control-pill;
+
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: var(--space-2xs);
+
+    &::before {
+      position: absolute;
+      bottom: 4px;
+      left: 4px;
+      transition: var(--duration-fast);
+      border: 1px solid var(--switcher-thumb-border);
+      border-radius: inherit;
+      background-color: var(--surface-panel);
+      width: 16px;
+      height: 16px;
+      content: '';
+    }
+  }
+}

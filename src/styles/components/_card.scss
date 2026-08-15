@@ -1,0 +1,93 @@
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: var(--space-xs);
+  break-inside: avoid;
+  border-radius: var(--radius-m);
+  padding: var(--space-s);
+  font-size: var(--text-s);
+
+  &__label {
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    border: 1px solid var(--card-accent-border, var(--border-accent));
+    border-radius: var(--radius-s);
+    background-color: var(--surface-panel);
+    padding: 0 var(--space-xs);
+    color: var(--text-secondary);
+    font-size: var(--text-xs);
+  }
+
+  &__label-text {
+    text-transform: lowercase;
+
+    &::before {
+      content: '_';
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  &__title {
+    color: var(--card-title-color, var(--accent));
+    font-weight: var(--font-weight-regular);
+    font-size: var(--text-m);
+    line-height: var(--leading-snug);
+  }
+
+  &__description {
+    box-shadow: inset 0 0 0 1px var(--ring-muted);
+    border-radius: var(--radius-m);
+    background-color: var(--surface-panel-alpha);
+    padding: var(--space-xs) var(--space-s);
+    font-size: var(--text-xs);
+  }
+
+  &__footer {
+    border-top: 1px dashed var(--border-footer);
+    padding-top: var(--space-xs);
+    color: var(--text-secondary);
+    font-size: var(--text-2xs);
+    line-height: 1rem;
+  }
+
+  &--primary {
+    transition: box-shadow var(--duration-fast);
+    box-shadow: inset 0 0 0 1px var(--border-accent);
+    background: var(--card-primary-bg-image);
+
+    &:hover {
+      box-shadow:
+        inset 0 0 0 1px var(--border-accent),
+        0 0 0 2px var(--border-accent);
+    }
+
+    @media print {
+      background: var(--surface-canvas);
+    }
+  }
+
+  &--secondary {
+    --card-accent-border: var(--border-highlight);
+    --card-title-color: var(--highlight);
+
+    transition: box-shadow var(--duration-fast);
+    box-shadow: -1px 0 0 var(--border-highlight);
+    border: 1px solid var(--border-highlight);
+    background: var(--card-secondary-bg-image);
+
+    &:hover {
+      box-shadow: 0 0 0 2px var(--border-highlight);
+    }
+
+    @media print {
+      background: var(--card-secondary-print-bg);
+    }
+  }
+}
