@@ -1,28 +1,33 @@
-import { defineConfig } from "vite";
-import { createHtmlPlugin } from "vite-plugin-html";
-import ViteSvgSpriteWrapper from "vite-svg-sprite-wrapper";
+import { defineConfig } from 'vite';
+import { createHtmlPlugin } from 'vite-plugin-html';
+import VitePluginSvgSpritemap from '@spiriit/vite-plugin-svg-spritemap';
 
 export default defineConfig({
-  base: "./",
+  base: './',
   plugins: [
     createHtmlPlugin({
       minify: true,
-      template: "./src/index.html",
+      template: './src/index.html',
     }),
-    ViteSvgSpriteWrapper({
-      icons: "./src/assets/icons/*.svg",
-      outputDir: "./src/assets",
+    VitePluginSvgSpritemap('./src/assets/icons/*.svg', {
+      prefix: '',
+      route: '/assets/sprite.svg',
+      output: {
+        name: 'sprite.svg',
+        view: false,
+        use: true,
+      },
     }),
   ],
   css: {
     preprocessorOptions: {
       scss: {
-        api: "modern-compiler",
+        api: 'modern-compiler',
       },
     },
   },
   build: {
-    outDir: "docs",
+    outDir: 'docs',
     rollupOptions: {
       output: {
         entryFileNames: `assets/[name].js`,
@@ -31,6 +36,6 @@ export default defineConfig({
     },
   },
   server: {
-    open: "/src/",
+    open: '/src/',
   },
 });

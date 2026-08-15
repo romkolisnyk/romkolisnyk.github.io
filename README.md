@@ -1,1 +1,1 @@
-### Just my [resume site](https://romkolisnyk.github.io/).
+### Just my [resume page](https://romkolisnyk.github.io/).

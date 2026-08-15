@@ -11,7 +11,7 @@ body {
 body {
   position: relative;
   background-color: var(--surface-secondary);
-  padding: 3rem;
+  padding: var(--body-padding, 3rem);
   min-width: 320px;
   overflow-x: hidden;
   color: var(--text-primary);
@@ -56,7 +56,7 @@ p {
 }
 
 h1 {
-  font-size: var(--font-size-xl);
+  font-size: var(--h1-font-size, var(--font-size-xl));
   line-height: 1.2;
 }
 

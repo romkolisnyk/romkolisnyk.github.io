@@ -1,4 +1,5 @@
 .switcher {
+  display: var(--floating-control-display);
   position: fixed;
   top: var(--fixed-offset);
   right: var(--fixed-offset);

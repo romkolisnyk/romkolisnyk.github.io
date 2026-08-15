@@ -52,7 +52,7 @@
   &--theme--primary {
     transition: box-shadow var(--transition-fast);
     box-shadow: inset 0 0 0 1px var(--card-primary-border);
-    background: var(--card-primary-gradient);
+    background: var(--card-primary-bg, var(--card-primary-gradient));
 
     &:hover {
       box-shadow:
@@ -68,7 +68,7 @@
     transition: box-shadow var(--transition-fast);
     box-shadow: -1px 0 0 var(--card-secondary-ring);
     border: 1px solid var(--card-secondary-ring);
-    background: var(--card-secondary-gradient);
+    background: var(--card-secondary-bg, var(--card-secondary-gradient));
 
     &:hover {
       box-shadow: 0 0 0 2px var(--card-secondary-ring);

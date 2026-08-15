@@ -1,5 +1,5 @@
 .download-button {
-  display: flex;
+  display: var(--floating-control-display, flex);
   position: fixed;
   right: var(--fixed-offset);
   bottom: var(--fixed-offset);

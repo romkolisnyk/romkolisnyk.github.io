@@ -7,7 +7,7 @@
   box-shadow: var(--page-shadow);
   border-radius: var(--radius-m);
   background-color: var(--surface-primary);
-  padding: 1.5rem;
+  padding: var(--page-padding, 1.5rem);
   max-width: 75rem;
 
   &__head {

@@ -1,9 +1,6 @@
 @media screen and (max-width: 992px) {
-  body {
-    padding: 0;
-  }
-
-  .page {
+  :root {
+    --body-padding: 0;
     --page-body-columns: 1fr;
   }
 }
@@ -11,36 +8,23 @@
 @media screen and (max-width: 768px) {
   :root {
     --fixed-offset: 8px;
-  }
-
-  .about {
     --about-img-display: none;
     --about-side-padding: 1rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  h1 {
-    font-size: var(--font-size-l);
-  }
-
-  .page {
-    padding: 1rem 1rem 5rem;
+  :root {
+    --page-padding: 1rem 1rem 5rem;
+    --h1-font-size: var(--font-size-l);
   }
 }
 
 @media print {
-  .switcher,
-  .download-button {
-    display: none;
-  }
-
-  .card--theme--primary {
-    background: var(--surface-secondary);
-  }
-
-  .card--theme--secondary {
-    background: var(--card-secondary-print-bg);
+  :root {
+    --floating-control-display: none;
+    --card-primary-bg: var(--surface-secondary);
+    --card-secondary-bg: var(--card-secondary-print-bg);
   }
 }
 
