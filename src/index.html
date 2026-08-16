@@ -29,7 +29,7 @@
       property="og:description"
       content="Roman Kolisnyk is a Frontend Developer &amp; UI Lead from Ukraine, specializing in HTML, CSS, JS/TS, AI/spec-driven development, React, and accessible, semantic, high-performance UI."
     />
-    <meta property="og:image" content="https://romkolisnyk.github.io/assets/me.png" />
+    <meta property="og:image" content="https://romkolisnyk.github.io/assets/me@2x.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Roman Kolisnyk — Frontend Developer &amp; UI Lead" />
@@ -37,7 +37,7 @@
       name="twitter:description"
       content="Roman Kolisnyk is a Frontend Developer &amp; UI Lead from Ukraine, specializing in HTML, CSS, JS/TS, AI/spec-driven development, React, and accessible, semantic, high-performance UI."
     />
-    <meta name="twitter:image" content="https://romkolisnyk.github.io/assets/me.png" />
+    <meta name="twitter:image" content="https://romkolisnyk.github.io/assets/me@2x.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,7 +54,7 @@
         "jobTitle": "Frontend Developer / UI Lead",
         "description": "Frontend Developer & UI Lead specializing in HTML, CSS, JS/TS, AI/SDD, React, and accessible, semantic, high-performance UI.",
         "url": "https://romkolisnyk.github.io/",
-        "image": "https://romkolisnyk.github.io/assets/me.png",
+        "image": "https://romkolisnyk.github.io/assets/me@2x.png",
         "email": "romkolisnyk@gmail.com",
         "address": {
           "@type": "PostalAddress",
@@ -102,7 +102,11 @@
     <main class="page">
       <section class="page__head">
         <header class="about">
-          <img class="about__img" src="assets/me.png" alt="Portrait of Roman Kolisnyk" srcset="assets/me@2x.png 2x" />
+          <picture class="about__picture">
+            <source type="image/webp" srcset="assets/me.webp 1x, assets/me@2x.webp 2x" />
+            <source type="image/png" srcset="assets/me.png 1x, assets/me@2x.png 2x" />
+            <img class="about__img" src="assets/me.png" alt="Portrait of Roman Kolisnyk" width="400" height="356" />
+          </picture>
           <div class="about__info">
             <h1 class="about__name">
               Roman Kolisnyk / Frontend Developer / UI Lead<span class="about__cursor" aria-hidden="true"></span>
